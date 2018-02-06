@@ -1,11 +1,10 @@
 #section1{
     background-image: url("https://www.fourseasons.com/content/dam/fourseasons/images/web/BAH/BAH_135_1280x486.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg");
-    color: Black;
+    color: white;
 }
 
 #section2{
-    background-image: url("http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_720/images/live/p0/56/0q/p0560qkz.jpg");
-  color: black;
+    background-image: url("https://www.slh.com/globalassets/country-pages/hero-images/spain2.jpg");
     
 }
 
@@ -20,7 +19,7 @@
 
 .section{
     text-align: center;
-    color: Black;
+    color: white;
 }
 
    

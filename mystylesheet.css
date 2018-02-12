@@ -22,12 +22,21 @@ h1{
     font-size:160%;
 }
 
+.secondheading{
+    text-align:center;
+    font-size:160%;
+}
+
+.college{
+    text-align:center;
+    font-size:160%;
+}
 .othersports{
     text-align:center;
     font-size:160%;
 }
   
-button{
+btn{
     text-align: center;
     
 }

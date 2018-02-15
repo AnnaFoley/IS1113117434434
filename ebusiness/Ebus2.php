@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="Stylesheet" href="../mystylesheet.css" type="text/css"/>
         
         <title> Enter Details</title>
         

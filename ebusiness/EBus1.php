@@ -4,6 +4,8 @@ session_start();
 
 <!DOCTYPE html>
 <html>
+    <link rel="Stylesheet" href="../mystylesheet.css" type="text/css"/>
+        
     <head>
         <title>Select Product</title>
         

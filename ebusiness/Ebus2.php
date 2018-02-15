@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +19,7 @@
         
             <br />
             
-            <form method="POST" action="Ebus3.php">
+            <form method="POST" action="EBus3.php">
                 
                 <label for="user_pin">
                      PIN 
@@ -35,6 +39,12 @@
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
+        <!--email and name needed-->
+        <?php
+        //set session variavles
+        $_SESSION["total"]=$_POST["total"]
+        ?>
+
         
     </body>
     </html>

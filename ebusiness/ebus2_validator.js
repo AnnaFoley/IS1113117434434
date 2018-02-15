@@ -15,6 +15,31 @@ function validateDetails(){
     else{
         enablebtnPurchase();
         }
+        
+          var name;
+    
+    name = document.getElementById("user_name").value;
+    
+    if (name==""){
+        alert("Please enter your Name");
+        }
+
+    else{
+        enablebtnPurchase();
+        }
+        
+        
+          var email;
+    
+    email= document.getElementById("user_email").value;
+    
+    if (email==""){
+        alert("Please enter your PIN");
+        }
+   
+    else{
+        enablebtnPurchase();
+        }
 }
 
 function enablebtnPurchase(){

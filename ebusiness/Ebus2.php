@@ -1,9 +1,10 @@
 <?php
+//Start the session
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
+    
     <head>
         <link rel="Stylesheet" href="../mystylesheet.css" type="text/css"/>
         
@@ -22,6 +23,21 @@ session_start();
             
             <form method="POST" action="EBus3.php">
                 
+                <label for "Name">
+                    Name
+                </label>
+                
+                <input tpye="text" id="user_name"  placeholder="Name">
+                
+                </br>
+                
+                <label for "email">
+                    E-mail Address
+                </label>
+                
+                <input type="text" id="user_email" placeholder="E-mail">
+                
+                </br>
                 <label for="user_pin">
                      PIN 
                 </label>

@@ -40,4 +40,5 @@ button{
 background-image{  size: cover;
 margin-left:  auto;
 margin-right: auto;
+background-attachment: fixed;
 }

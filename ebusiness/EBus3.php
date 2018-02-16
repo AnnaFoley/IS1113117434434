@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 ?>
 
@@ -15,6 +14,8 @@ session_start();
                 
                 <?php
                 //Echo session variables that were set on previous page
+                echo "Name " . $_SESSION["user_name"] . ".";
+             
                 echo "Total is " . $_SESSION["total"] . ".";
                 ?>
         </body>

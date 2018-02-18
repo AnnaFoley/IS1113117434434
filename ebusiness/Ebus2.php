@@ -6,7 +6,7 @@ session_start();
 <html>
     
     <head>
-        <link rel="Stylesheet" href="../mystylesheet.css" type="text/css"/>
+        <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
         <title> Enter Details</title>
         
@@ -44,7 +44,7 @@ session_start();
                 
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
                     
-                <button type="Submit" id="btnPurchase" disabled> 
+                <button class = "btn btn-dark" type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
                 
@@ -52,7 +52,7 @@ session_start();
             
             <br />
             
-            <button onClick="validateDetails()"> Validate </button>
+            <button  class = "btn btn-dark"onClick="validateDetails()"> Validate </button>
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         

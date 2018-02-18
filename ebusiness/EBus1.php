@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-    <link rel="Stylesheet" href="../mystylesheet.css" type="text/css"/>
+    <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
     <head>
         <title>Select Product</title>
@@ -16,7 +16,7 @@ session_start();
   
     <body>
         
-    <h4 Select a Product </h4> 
+    <h1>Select a Product </h1>
             
     </br>
             
@@ -31,35 +31,64 @@ session_start();
         
         <label for="aws">
         <input type="radio" id="aws" name="product" checked  onClick="disablebtnProceed()"/>
-        AWS @ $300
+        Amazon Web Services @ $300
         </label>
-            
+        
+        </br>
+        <label for="cloud9">
+        <input type="radio" id="cloud9" name="product" checked  onClick="disablebtnProceed()"/>
+        Cloud9 @ $200
+        </label>
+           
+           </br>
+           <label for="gmail">
+        <input type="radio" id="gmail" name="product" checked  onClick="disablebtnProceed()"/>
+        Gmail @ $400
+        </label> 
          </br>
          </br>
             
         <label for="subtotal">
-        Sub Total
+            Sub Total
         <input type="text" id="subtotal" name="subtotal" value="0.00"  readonly/>
+         
         </label>
             
         </br>
-             
-             
+        <label for="discount">
+        Discount @ 5%
+        <input type="text" id="discount" name="discount" value="0.00"  readonly/>
+        
+         </br>
+         (- Discount)
+        </label>
+            
+            </br>
+            
+        <label for="Vat">
+         VAT @ 10%
+        <input type="text" id="discount" name="discount" value="0.00"  readonly/>
+         
+        </label>
+             </br>
          <label for= "total">
-         Total
+        Total
         <input type="text" id="total" name="total" value="0.00"  readonly/>
+       
+        </br>
+        (- discount + VAT)
         </label>
             
         </br>
-        <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+        <button  class = "btn btn-dark" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                     
         </form>
             
         </br> 
 
              
-        <a role="button" href="Ebus1.php"> Clear Choice</a>
-        <button onClick="calcSub()"> Calculate Cost</button> 
+        <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
+        <button onClick="calcSub()" class = "btn btn-dark"> Calculate Cost</button> 
       
     </body>
     

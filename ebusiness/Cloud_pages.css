@@ -38,7 +38,7 @@ background-attachment:fixed;
   .details{
             text-align:center;
             list-style-type:none;
-        
+        float:none;
             overflow:hidden;
             color:white
             }
@@ -47,7 +47,7 @@ button {
     background-color: #e7e7e7; /* Grey */
     border: none;
     color: black;
-    padding: 12px 28px;
+    
     text-align: center;
     text-decoration: none;
     display: inline-block;

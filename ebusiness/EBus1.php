@@ -7,6 +7,13 @@ session_start();
     <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
     <head>
+          <!--tab on the top of the page so can go back home  or on to the next page-->
+                <ul>
+            <li> <a href="..//homepage.html">Home</a></li>
+             <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
+              <li> <a href="..//interests/sports.html">Interests(Sports)</a></li>
+            <li> <a href="AboutCloud.html"> About Clouds</a></li>
+            <li> <a href="EBus1.php">Select a product</a></li>
         <title>Select Product</title>
         
         <!--JQuery-->

@@ -14,7 +14,9 @@ session_start();
               <li> <a href="..//interests/sports.html">Interests(Sports)</a></li>
             <li> <a href="AboutCloud.html"> About Clouds</a></li>
             <li> <a href="EBus1.php">Select a product</a></li>
+       </ul>
         <title>Select Product</title>
+        
         
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,7 +25,7 @@ session_start();
   
     <body>
         
-    <h1>Select a Product </h1>
+    <h1 class="mianheading">Select a Product </h1>
             
     </br>
             
@@ -72,9 +74,9 @@ session_start();
             
             </br>
             
-        <label for="Vat">
+        <label for="vat">
          VAT @ 10%
-        <input type="text" id="discount" name="discount" value="0.00"  readonly/>
+        <input type="text" id="vat" name="vat" value="0.00"  readonly/>
          
         </label>
              </br>
@@ -95,7 +97,7 @@ session_start();
 
              
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
-        <button onClick="calcSub()" class = "btn btn-dark"> Calculate Cost</button> 
+        <button onClick=" calcSub()" class = "btn btn-dark"> Calculate Cost</button> 
       
     </body>
     

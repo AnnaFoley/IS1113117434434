@@ -4,11 +4,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: grey;
 }
 
 
-li {
+li a {
     float: left;
 }
 
@@ -23,11 +23,13 @@ li a {
 .mainheading{
     text-align:center;
 }
+
 body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
     text-align:center;
-    font-size:140%;
+    font-size:120%;
 }
+
 background-image{
     size:cover;
 margin-left:auto;
@@ -35,13 +37,16 @@ margin-right:auto;
 background-attachment:fixed;
 }    
 
-  .details{
+ul b{
             text-align:center;
             list-style-type:none;
-        float:none;
+            float:none;
             overflow:hidden;
-            color:white
-            }
+            color:white;
+            font-size:120%
+        
+            
+}
 
 button {
     background-color: #e7e7e7; /* Grey */

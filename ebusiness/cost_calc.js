@@ -29,7 +29,7 @@ function calcSub(){
 }
 
 
-function calcDisVatTotal(argSubTotal, parm2, parm3,parm4){
+function calcDisVatTotal(argSubTotal, parm2, parm3, parm4){
     //calculations for the discount and vat and total 
     
     var argDiscountAmt;
@@ -39,36 +39,28 @@ function calcDisVatTotal(argSubTotal, parm2, parm3,parm4){
      //Calculations for the discount
     
     argDiscountAmt = argSubTotal * .05;
-    argDiscountAmt = document.getElementById("discount").value;
-    argDiscountAmt = parm2;
-    display(argDiscountAmt);
-    
+     document.getElementById("discount").value;
+   
+   
 
 
    //calculations for VAT
     
-    argVatAmt = argSubTotal * .1;
-    argVatAmt = document.getElementById("vat").value;
-    argVatAmt = parm3;
-    display(argVatAmt);
+    argVatAmt = (argSubTotal -argDiscountAmt) * .1;
+    document.getElementById("vat").value;
+   
+    
     
     //calculations for the total price
     
     argTotalprice = argSubTotal - argDiscountAmt + argVatAmt;
-   argTotalprice = document.getElementById("total").value;
-   argTotalprice = parm4;
-    display(argTotalprice);
+    document.getElementById("total").value;
+    display(argSubTotal, argDiscountAmt, argVatAmt,argTotalprice);//pass the values to the display function 
+    
 }
 
-
+function display(parm1, parm2, parm3, parm4){
    
-   
-
-
- 
-
-function display(parm1,parm2,parm3,parm4){
-    
     document.getElementById("subtotal").value =parm1;
     document.getElementById("discount").value = parm2;
     document.getElementById("vat").value =parm3;

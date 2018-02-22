@@ -34,7 +34,7 @@ function validateDetails(){
     email= document.getElementById("user_email").value;
     
     if (email==""){
-        alert("Please enter your PIN");
+        alert("Please enter your E-mail Address");
         }
    
     else{

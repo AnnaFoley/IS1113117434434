@@ -17,27 +17,28 @@ session_start();
     
     <body>
         
-        <h4>Please enter your payment details.</h4>
+        <h2>Please enter your payment details.</h2>
         
             <br />
             
             <form method="POST" action="EBus3.php">
-                
+                   <!--email and name needed-->
                 <label for "Name">
                     Name
-                </label>
-                
+                     </label>
                 <input tpye="text" id="user_name"  placeholder="Name">
+                  
                 
                 </br>
                 
                 <label for "email">
                     E-mail Address
-                </label>
-                
+                     </label>
                 <input type="text" id="user_email" placeholder="E-mail">
+               
                 
                 </br>
+                
                 <label for="user_pin">
                      PIN 
                 </label>
@@ -56,11 +57,20 @@ session_start();
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
-        <!--email and name needed-->
+      <!--set session variables-->
+       <?php
+        $_SESSION["user_name"]=$_POST["user_name"]
+        ?>
+        
         <?php
-        //set session variavles
+        $_POST["user_email"]=$_POST["user_email"]
+        ?>
+        
+        <?php
         $_SESSION["total"]=$_POST["total"]
         ?>
+        
+       
 
         
     </body>

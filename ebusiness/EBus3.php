@@ -10,13 +10,23 @@ session_start();
             <title>RECIEPT</title>
         </head>
         <body>
-                <h4>RECEIPT</h4>
+                <h1>RECEIPT</h1>
                 
                 <?php
                 //Echo session variables that were set on previous page
-                echo "Name " . $_SESSION["user_name"] . ".";
+                echo "Name is " . $_SESSION["user_name"] . ".";
+             ?>
              
-                echo "Total is " . $_SESSION["total"] . ".";
+             </br>
+             
+             <?php
+              echo "E-mail address  is " . $_SESSION["user_email"] . ".";
+             ?>
+             
+             </br>
+             
+             <?php
+                echo " The Total is " . $_SESSION["total"] . ".";
                 ?>
         </body>
     

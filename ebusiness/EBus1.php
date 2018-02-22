@@ -97,7 +97,7 @@ session_start();
 
              
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
-        <button onClick=" calcSub()" class = "btn btn-dark"> Calculate Cost</button> 
+        <button onClick="calcSub()" class = "btn btn-dark"> Calculate Cost</button> 
       
     </body>
     

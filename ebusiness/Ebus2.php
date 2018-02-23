@@ -22,6 +22,7 @@ session_start();
             <br />
             
             <form method="POST" action="EBus3.php">
+                
                    <!--email and name needed-->
                 <label for "Name">
                     Name
@@ -58,14 +59,6 @@ session_start();
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
       <!--set session variables-->
-       <?php
-        $_SESSION["user_name"]=$_POST["user_name"]
-        ?>
-        
-        <?php
-        $_POST["user_email"]=$_POST["user_email"]
-        ?>
-        
         <?php
         $_SESSION["total"]=$_POST["total"]
         ?>

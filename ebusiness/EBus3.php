@@ -12,21 +12,17 @@ session_start();
         <body>
                 <h1>RECEIPT</h1>
                 
+                  <?php
+                  
+                 $_SESSION["user_name"] = $_POST["user_name"];
+                 $_SESSION["user_email"] = $_POST["user_email"];
+                   ?>
+                    
                 <?php
-                //Echo session variables that were set on previous page
-                echo "Name is " . $_SESSION["user_name"] . ".";
-             ?>
-             
-             </br>
-             
-             <?php
-              echo "E-mail address  is " . $_SESSION["user_email"] . ".";
-             ?>
-             
-             </br>
-             
-             <?php
-                echo " The Total is " . $_SESSION["total"] . ".";
+                   
+                    echo "Name is " . $_SESSION["user_name"] . "</br>";
+                    echo "E-mail address  is " . $_SESSION["user_email"] . "</br>";
+                    echo " The Total is " . $_SESSION["total"] . "</br>";
                 ?>
         </body>
     

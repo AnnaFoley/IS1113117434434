@@ -27,7 +27,7 @@ session_start();
                 <label for "Name">
                     Name
                      </label>
-                <input tpye="text" id="user_name"  placeholder="Name">
+                <input tpye="text" name="user_name"  placeholder="Name">
                   
                 
                 </br>
@@ -35,7 +35,7 @@ session_start();
                 <label for "email">
                     E-mail Address
                      </label>
-                <input type="text" id="user_email" placeholder="E-mail">
+                <input type="text" name="user_email" placeholder="E-mail">
                
                 
                 </br>
@@ -44,7 +44,7 @@ session_start();
                      PIN 
                 </label>
                 
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                <input type="password" name="user_pin" placeholder="Card Pin" maxlength="4">
                     
                 <button class = "btn btn-dark" type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
@@ -59,8 +59,9 @@ session_start();
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
       <!--set session variables-->
+      
         <?php
-        $_SESSION["total"]=$_POST["total"]
+        $_SESSION["total"]=$_POST["total"];
         ?>
   
     </body>

@@ -33,6 +33,8 @@ h1{
 .secondheading{
     text-align:center;
     font-size:140%;
+    margin:auto;
+    width:50%;
 }
 
 .college{

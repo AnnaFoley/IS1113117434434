@@ -1,32 +1,40 @@
 #section1{
     background-image: url("https://www.fourseasons.com/content/dam/fourseasons/images/web/BAH/BAH_135_1280x486.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg");
     color: white;
-     
-     
+    background:cover;
+     background-repeat: no-repeat;
+     size:cover;
+
 }
 
 #section2{
     background-image: url("https://gilmourlance.org/wp-content/uploads/2016/03/11.jpg");
-     background-repeat: no-repeat;
+ size:cover;
+     background:cover;
     
 }
 
 
 #section3{
      background-image: url("http://www.bu.edu/abroad/files/2016/05/banner-sydney7.jpg");
-   
+     background:cover;
+   background-repeat: no-repeat;
 }
 
 #section4{
      background-image: url("https://www.newyorktolive.com/wp-content/uploads/2017/12/nyc-2.jpg");
-      
+     background:cover;
+      background-repeat: no-repeat;
 }
 
 .section{
     text-align: center;
     color: white;
-     
+    background:cover;
+    background-repeat: no-repeat;
+    size:cover;
 }
+
 background-image{  size: cover;
 margin-left:  auto;
 margin-right: auto;

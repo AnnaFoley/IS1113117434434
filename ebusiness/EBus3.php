@@ -8,21 +8,21 @@ session_start();
         
         <head>
             <title>RECIEPT</title>
+            <?php
+            //Set yhe session variables 
+                   $_SESSION["user_email"] = $_POST["user_email"];
+                   $_SESSION["user_name"] = $_POST["user_name"];
+                   ?>
         </head>
         <body>
-                <h1>RECEIPT</h1>
-                
-                  <?php
-                  
-                 $_SESSION["user_name"] = $_POST["user_name"];
-                 $_SESSION["user_email"] = $_POST["user_email"];
-                   ?>
-                    
+                <h1> Payment Receipt</h1>
+              
                 <?php
-                   
-                    echo "Name is " . $_SESSION["user_name"] . "</br>";
-                    echo "E-mail address  is " . $_SESSION["user_email"] . "</br>";
+                //Echo session varisbles that were set on the previous page 
+                    echo "Name " . $_SESSION["user_name"] . "</br>";
+                    echo "E-mail " . $_SESSION["user_email"] . "</br>";
                     echo " The Total is " . $_SESSION["total"] . "</br>";
+            
                 ?>
         </body>
     

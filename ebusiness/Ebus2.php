@@ -54,7 +54,7 @@ session_start();
             
             <br />
             
-            <button  class = "btn btn-dark"onClick="validateDetails()"> Validate </button>
+            <button  class = "btn btn-dark" onClick=" validateDetails()"> Validate </button>
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         

@@ -31,19 +31,40 @@
           <style type="text/css">
               .personal-details{ text-align:center;
                                 font-size:100%;
-                                width:30%;
                                 background-color:white;
-                            
-                  
+                                 top: 20px;
+                               right: 100%;
+                              left: 100%;
+                             position: absolute;
+         
               }
-
+             .debs-me{    float:right;
+            width:350px;
+                height:400px;
+                  border-radius: 50%;
+            
+             }
+        
+       
+              .About-me{     margin:auto;
+                      text-align:center;
+                      right: 290px;
+                        left: 290px;
+                        top:450px;
+                  background-color:white;
+	                width:55%;
+	                height:50%;
+                    
+                             position: absolute;
+ 
+                	border:solid thin black;
+    
+              }
     
           </style>
        <div class="Personal-details" id="Personal-details"> 
        <p class="personal-details" style="font-size:140%">
             <strong>Name:</strong> Anna Foley  
-            
-
         </br>
         <strong>Address:</strong> Cork
         </br>
@@ -56,33 +77,8 @@
         </div> 
         <img  class="debs-me" src = "https://photos-3.dropbox.com/t/2/AADD3FRmdv9FBcCwzfz7gnBfDvTwkkco7m1Kt8_FRkJEZw/12/346696569/jpeg/32x32/1/_/1/2/2017-07-29%2013.43.15.jpg/EPSttdsCGO4uIAcoBw/G3_2RFMCoK9DrwpSb5HoBTqdK_LyvzrDqPRfcd1wJ4k?size=1280x960&size_mode=3" alt  ="Picture of me" >
           
-        <style>
-        .debs-me{    float:right;
-            width:350px;
-                height:400px;
-            
-        }
         
-       
-      .About-me{     margin:auto;
-                      text-align:center;
-                      top:40em;
-	                left: 20em;
-                  background-color:rgb(196, 126, 165);
-	                width:55%;
-	                height:90%;
-
- 
-                	border:solid thin black;
-            
-	                position: absolute;
-
-                    padding-left:1em;
-                	padding-top:1.5em
-
-                       }
-        </style>
-        
+        </br>
         </br>
         </br>
         <h2 class="secondheading"  style =" text-decoration: underline">More about Me </h2>
@@ -96,7 +92,11 @@
 
         
             <!--Button-->
-          <a href="..//homepage.html" class = "btn btn-dark">Previous</a>
-           <a href="cv_page2.html" class= "btn btn-dark"> Next</a>
+          <div class="previous">
+          <a  href="..//homepage.html" class ="btn btn-dark" >Previous</a>
+          </div>
+          <div class="next">
+           <a  href="cv_page2.html" class = "btn btn-success"> Next</a>
+        </div>
     </body>
 </html>

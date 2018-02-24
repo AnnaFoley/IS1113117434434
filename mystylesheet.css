@@ -3,7 +3,7 @@
    
 }
 body {
-    background-image:url("https://cdn.pixabay.com/photo/2017/09/06/22/59/background-2723429__340.jpg");
+    background-image:url("https://enviragallery.com/wp-content/uploads/2015/10/wooden-surface-1.jpg");
     text-align:center;
     font-size:100%;
        background-size:cover;
@@ -76,15 +76,41 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-button{
+a{
    position:absolute;
     margin: auto;
-    width: 50%;
-    border: 3px solid green;
+    width: 10%;
+   
     padding: 10px;
+    right:290px;
+    left:290px;
+    top:900px;
+    background-color:green;
 
 }
 
+.previous{
+    position:absolute;
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+    right:260px;
+    left:260px;
+    top:900px;
+    background-color:green;
+
+}
+.next{ position:absolute;
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+    right:300px;
+    left:300px;
+    top:900px;
+    background-color:green;
+
+    
+}
 type{
     text-align:center
 }

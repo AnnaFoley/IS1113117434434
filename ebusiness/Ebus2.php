@@ -27,7 +27,7 @@ session_start();
                 <label for "Name">
                     Name
                      </label>
-                <input tpye="text" name="user_name"  placeholder="Name">
+                <input tpye="text" name="user_name"  placeholder="Name" maxlength="30">
                   
                 
                 </br>
@@ -35,7 +35,7 @@ session_start();
                 <label for "email">
                     E-mail Address
                      </label>
-                <input type="text" name="user_email" placeholder="E-mail">
+                <input type="text" name="user_email" placeholder="E-mail" maxlength="30">
                
                 
                 </br>
@@ -50,12 +50,14 @@ session_start();
                     Proceed with Purchase 
                 </button>
                 
-            </form>
-            
-            <br />
+                
+                   <br />
             
             <button  class = "btn btn-dark" onClick=" validateDetails()"> Validate </button>
         
+            </form>
+            
+         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
       <!--set session variables-->

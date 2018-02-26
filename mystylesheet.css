@@ -12,7 +12,7 @@ body {
 }
 
 background-image{
-    size:cover;
+    background-size:cover;
 
 background-attachment:fixed;
  background-repeat: no-repeat;
@@ -28,7 +28,7 @@ background-attachment:fixed;
 
 p{
     text-align:center; 
-    font-size:130%;
+    font-size:100%;
 }
 
 
@@ -45,9 +45,24 @@ h1{
     width:50%;
 }
 
+.secondary-school{ 
+                 text-align:center;
+    font-size:100%;
+    margin:auto;
+    width:50%;
+    background-color: white;
+    border:solid thin black;
+  
+    
+    
+}
 .college{
     text-align:center;
-    font-size:140%;
+    font-size:100%;
+     margin:auto;
+    width:50%;
+    background-color: white;
+    border:solid thin black;
 }
 .othersports{
     text-align:center;

@@ -3,6 +3,7 @@
 function validateDetails(){
     
     var pin;
+  
     
     pin = document.getElementById("user_pin").value;
     
@@ -22,6 +23,10 @@ function validateDetails(){
     
     if (name==""){
         alert("Please enter your Name");
+    }
+        else if (String(name).length<30){
+            alert("Name is too long, Please re-enter your name");
+        
         }
 
     else{
@@ -35,6 +40,9 @@ function validateDetails(){
     
     if (email==""){
         alert("Please enter your E-mail Address");
+        }
+        else if (String(email).length<30){
+            alert("Email is too long please re-enter your email")
         }
    
     else{

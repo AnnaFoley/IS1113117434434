@@ -7,12 +7,13 @@ session_start();
     
     <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
-         <script type="text/javascript" src="ebus2_validator.js"></script>
+   
         <title> Enter Details</title>
         
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+               <script type="text/javascript" src="ebus2_validator.js"></script>
     </head>
     
     <body>
@@ -53,8 +54,8 @@ session_start();
             </form>
               
                <br />
-              
-            <button  class = "btn btn-dark" onClick=" validateDetails()"> Validate </button>
+             
+            <button  class = "btn btn-dark" onClick="validateDetails()"> Validate </button>
                   
        
         

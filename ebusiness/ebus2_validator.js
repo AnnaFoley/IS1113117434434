@@ -13,34 +13,28 @@ function validateDetails(){
 //if statement to ensure all details are entered correct before carrying on 
     if (pin==""){
         alert("Please enter your PIN");
+       
         }
     else if (String(pin).length<4){
         alert("Please make sure your PIN is accurate");
-        
+       
         }
-   
-         
  
     else if (name==""){
         alert("Please enter your Name");
+        enablebtnPurchase();
     }
        
     else if (email==""){
         alert("Please enter your E-mail Address");
         
-        disablebtnPurchase();
+        
     }
-else
-        enablebtnPurchase();
+ enablebtnPurchase();
+       
         
 }
-if  (String(pin).length==4){
-    enablebtnPurchase()
-    else if (String(name).length<30);
-    enablebtnPurchase()
-    else if (String(email).length<30);
-    enablebtnPurchase()
-}
+
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);
 }

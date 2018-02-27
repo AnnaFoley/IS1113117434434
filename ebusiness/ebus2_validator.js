@@ -1,55 +1,46 @@
 /* global $ */
 
 function validateDetails(){
-    
+//declaring the variables 
     var pin;
-  
-    
+   var name;
+     var email;
+//assigning values to the variables 
     pin = document.getElementById("user_pin").value;
-    
+        name = document.getElementById("user_name").value;
+   email= document.getElementById("user_email").value;
+   
+//if statement to ensure all details are entered correct before carrying on 
     if (pin==""){
         alert("Please enter your PIN");
         }
     else if (String(pin).length<4){
         alert("Please make sure your PIN is accurate");
-        }
-    else{
-        enablebtnPurchase();
-        }
         
-          var name;
-    
-    name = document.getElementById("user_name").value;
-    
-    if (name==""){
-        alert("Please enter your Name");
-    }
-        else if (String(name).length<30){
-            alert("Name is too long, Please re-enter your name");
-        
-        }
-
-    else{
-        enablebtnPurchase();
-        }
-        
-        
-          var email;
-    
-    email= document.getElementById("user_email").value;
-    
-    if (email==""){
-        alert("Please enter your E-mail Address");
-        }
-        else if (String(email).length<30){
-            alert("Email is too long please re-enter your email")
         }
    
-    else{
+         
+ 
+    else if (name==""){
+        alert("Please enter your Name");
+    }
+       
+    else if (email==""){
+        alert("Please enter your E-mail Address");
+        
+        disablebtnPurchase();
+    }
+else
         enablebtnPurchase();
-        }
+        
 }
-
+if  (String(pin).length==4){
+    enablebtnPurchase()
+    else if (String(name).length<30);
+    enablebtnPurchase()
+    else if (String(email).length<30);
+    enablebtnPurchase()
+}
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);
 }

@@ -7,7 +7,7 @@ session_start();
     
     <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
-        
+         <script type="text/javascript" src="ebus2_validator.js"></script>
         <title> Enter Details</title>
         
         
@@ -49,16 +49,14 @@ session_start();
                 <button class = "btn btn-dark" type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
-                
-                
-                   <br />
             
-            <button  class = "btn btn-dark" onClick=" validateDetails()"> Validate </button>
-        
             </form>
-            
-         
-        <script type="text/javascript" src="ebus2_validator.js"></script>
+              
+               <br />
+              
+            <button  class = "btn btn-dark" onClick=" validateDetails()"> Validate </button>
+                  
+       
         
       <!--set session variables-->
       

@@ -3,13 +3,13 @@
     color: white;
     background:cover;
      background-repeat: no-repeat;
-     size:cover;
+      background-size:cover;
 
 }
 
 #section2{
     background-image: url("https://gilmourlance.org/wp-content/uploads/2016/03/11.jpg");
- size:cover;
+    background-size:cover;
      background:cover;
     
 }
@@ -32,7 +32,7 @@
     color: white;
     background:cover;
     background-repeat: no-repeat;
-    size:cover;
+    background-size:cover;
 }
 
 background-image{  size: cover;
@@ -40,5 +40,7 @@ margin-left:  auto;
 margin-right: auto;
 background-attachment: fixed;
   background-repeat: no-repeat;
+  
+  
 }
-   
+  

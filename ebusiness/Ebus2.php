@@ -7,13 +7,13 @@ session_start();
     
     <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
-   
+        <script type="text/javascript" src="ebus2_validator.js"></script>
+
         <title> Enter Details</title>
         
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-               <script type="text/javascript" src="ebus2_validator.js"></script>
     </head>
     
     <body>
@@ -28,7 +28,7 @@ session_start();
                 <label for "Name">
                     Name
                      </label>
-                <input tpye="text" name="user_name"  placeholder="Name" maxlength="30">
+                <input tpye="text" name="user_name" id="user_name" placeholder="Name" maxlength="30">
                   
                 
                 </br>
@@ -36,7 +36,7 @@ session_start();
                 <label for "email">
                     E-mail Address
                      </label>
-                <input type="text" name="user_email" placeholder="E-mail" maxlength="30">
+                <input type="text" name="user_email" id="user_email" placeholder="E-mail" maxlength="30">
                
                 
                 </br>
@@ -45,7 +45,7 @@ session_start();
                      PIN 
                 </label>
                 
-                <input type="password" name="user_pin" placeholder="Card Pin" maxlength="4">
+                <input type="password" name="user_pin" id="user_pin" placeholder="Card Pin" maxlength="4">
                     
                 <button class = "btn btn-dark" type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 

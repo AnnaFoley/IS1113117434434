@@ -2,50 +2,101 @@
 <html>
    
     <head>
-        <title>Sports</title>
-        <link rel="Stylesheet" href="../mystylesheet.css" type="text/css"/>
-       
-       
-   
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-         <!--Adding bootstrap-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+       
+<style type="text/css"/>
+#camogie {background-color: white;
+                    margin:auto;
+                      text-align:center;
+	                width:30%;
+	                height:30%;
+	                border:solid thin black;
+}
+
+#camogie-logo{width:300px;
+                           height:300px;
+                           position:absolute;
+                           top:130px;
+                           right:300px;
+                           left:1100px;
+                           border:solid thin black;
+ 
+}
+
+#football{ background-color: white;
+                    margin:auto;
+                      text-align:center;
+	                width:30%;
+	                height:35%;
+	                border:solid thin black;
+}
+ #football-logo{{width:300px;
+                           height:300px;
+                           position:absolute;
+                           top:130px;
+                           right:300px;
+                           left:1100px;
+                           border:solid thin black;
+ }
+ 
+
+
+
+
+
+
+
+</style>
 
     </head>
     <body>
-        <body style="background-color:powderblue;">
+       
       
          <h1 class="mainheading" style =" text-decoration: underline"> Sports</h1>
+       
+         <!--section on camogie-->
          <h4 class="othersports"  style =" text-decoration: underline"> Camogie</h4>
-        <img src="http://kkc.s3.amazonaws.com/uploads/2016/09/Camogie-Logo.jpg" style="float:right;width:150px;height:150px;">
-        <p><strong>Training:</strong> Tuesdays and Fridays and Sunday</p>
-        <p><strong>Club: </strong> Banteer</p>
-        <p><strong>Club Colours: </strong> Red and White</p>
-        <p><strong>Positon:</strong>Wing Back</p>
-        <p><strong>Age Started PLaying :</strong> I started playeing I was 7 years old when the club began.</p>
-          
-        <p><strong>Achievements:</strong> Member of  Banteer Junior A Camogie Team </br>  Junior B County Camogie Champions 2015 <br/> Member of UCC Senior B panel </p>
+         
+        <img  class="camogie-logo" id="camogie-logo" src="http://kkc.s3.amazonaws.com/uploads/2016/09/Camogie-Logo.jpg" style="float:right;width:150px;height:150px;">
+        <!--creating a seperate div for the text section-->
+        <div class="camogie" id="camogie">
+        <p><strong>Training:</strong> Tuesdays and Fridays and Sunday<br/>
+       <strong>Club: </strong> Banteer<br/>
+        <strong>Club Colours: </strong> Red and White<br/>
+        <strong>Positon:</strong>Wing Back<br/>
+        <strong>Age Started PLaying :</strong> I started playeing I was 7 years old when the club began.<br/>
+        <strong>Achievements:</strong> Member of  Banteer Junior A Camogie Team </br>  Junior B County Camogie Champions 2015 <br/> Member of UCC Senior B panel </p>
+        </div>
         
-        <h4 class="othersports"  style =" text-decoration: underline"> Football</h1>
-       <p><strong>Training:</strong> Mondays  and Fridays and Sunday <img src=http://ladiesgaelic.ie/wp-content/uploads/2012/03/LOGO.jpg style="float:right;width:150px;height:150px;"></p>
+        
+        
+        <h4 class="othersports"  style =" text-decoration: underline"> Football</h4>
+        <div class="foorball" id="foorball">
+       <p><strong>Training:</strong> Mondays  and Fridays and Sunday</p>
         <p><strong>Club: </strong> Banteer</p>
         <p><strong>Club Colours: </strong> Red and White and Black</p>
         <p><strong>Positon:</strong>Centre Back</p>
         <p><strong>Age Started PLaying :</strong> I started playeing I was 10 years old after alot of persuation from friends and local members .</p>
         <p><strong>Achievements:</strong> Member of  Banteer junior C Ladies Football Team </p>
-        
-         <h4 class="othersports"  style =" text-decoration: underline"> Badminton </h1>
+        </div>
+         <img class="football-logo" id="foorball-logo" src=http://ladiesgaelic.ie/wp-content/uploads/2012/03/LOGO.jpg style="float:right;width:150px;height:150px;">
+         
+         
+         <h4 class="othersports"  style =" text-decoration: underline"> Badminton </h4>
+         <div class="badminton" id="badminton">
        <p><strong>Training:</strong> Wednesday and Tuesday <img src="http://dunmorebadmintonclub.com/wp/wp-content/uploads/2014/10/badminton-ireland-logo.jpg" style="float:right;width:150px;height:150px;"></p>
         <p><strong>Club: </strong> Banteer</p>
         <p><strong>Positon:</strong>Centre Back</p>
         <p><strong>Age Started PLaying :</strong> I started playeing I was 9 years old when I wzsa old enough to join the club .</p>
         <p><strong>Achievements:</strong> Cork U15/17 Badminton Teams <br/>  Silver All-Irelannd Schools Medal Badminton</br> UCC Divison 5 Mixed and Ladies Doubles </p>
-        
+        </div>
         <br/>
        
         <a href="travel.html" class= "btn btn-dark"> Next</a>
         <a href="..//homepage.html" class = "btn btn-light">Previous</a>
+  
         </body>
        </html>

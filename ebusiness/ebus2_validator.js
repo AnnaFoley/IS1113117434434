@@ -11,7 +11,7 @@ function validateDetails(){
    email= document.getElementById("user_email").value;
    
 //if statement to ensure all details are entered correct before carrying on 
-    if (pin==""){
+    if (pin == ""){
         alert("Please enter your PIN");
        
         }
@@ -22,7 +22,6 @@ function validateDetails(){
  
     else if (name==""){
         alert("Please enter your Name");
-        enablebtnPurchase();
     }
        
     else if (email==""){
@@ -30,7 +29,10 @@ function validateDetails(){
         
         
     }
- enablebtnPurchase();
+    else {
+        enablebtnPurchase();
+    }
+ 
        
         
 }

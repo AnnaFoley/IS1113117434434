@@ -69,31 +69,23 @@ h1{
     font-size:140%;
 }
 
-
-ul {
-    list-style-type: none;
+#nav-bar{list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: grey;
+    color:white;
 }
+    
 
-
-li a {
-    float: left;
-}
-
-
-li a {
-    display: block;
+ li {  
+     float:left;
+     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
-    text-decoration: none;
+     text-decoration: none;
 }
-
-
-
 
 .previous{
     position:absolute;
@@ -116,7 +108,4 @@ li a {
     background-color:green;
 
     
-}
-type{
-    text-align:center
 }

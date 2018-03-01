@@ -21,6 +21,22 @@ session_start();
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
+        
+        <style type="text/css">
+        
+         
+         #calcuate-cost{padding: 14px 40px;
+                       background-color: #008CBA;
+                       font-size: 16px;
+                       border-radius: 8px;
+                       width: 250px;
+          
+         }
+         
+         
+        </style>
+        
+        
   </head>
   
     <body>
@@ -94,10 +110,11 @@ session_start();
         </form>
             
         </br> 
-
-             
+<div class="calculate-cost" id ="calculate-cost">
+              <button onClick="calcSub()" class = "btn btn-dark" id="calculate-cost"> Calculate Cost</button> 
+               </div>
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
-        <button onClick="calcSub()" class = "btn btn-dark"> Calculate Cost</button> 
+      
       
     </body>
     

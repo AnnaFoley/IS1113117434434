@@ -25,14 +25,28 @@ session_start();
         <style type="text/css">
         
          
-         #calcuate-cost{padding: 14px 40px;
-                       background-color: #008CBA;
-                       font-size: 16px;
+         #calculate-cost{padding: 12px 28px;
+                       background-color: rgb(208, 83, 71);
+                       font-size: 12px;
                        border-radius: 8px;
                        width: 250px;
+                       position:absolute;
+                       top:490px;
+                       right:300px;
+                       left:460px;
+                       }
+         #shopping-cart{padding: 12px 28px;
+                       background-color: rgb(208, 83, 71);
+                      font-size: 12px;
+                       border-radius: 8px;
+                       width: 250px;
+                        position:absolute;
+                       top:440px;
+                       right:300px;
+                       left:460px;
           
+  
          }
-         
          
         </style>
         
@@ -105,14 +119,19 @@ session_start();
         </label>
             
         </br>
-        <button  class = "btn btn-dark" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
-                    
+        <div class="shopping-cart" id="shopping-cart">
+        <button   type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+                    </div>
         </form>
             
         </br> 
 <div class="calculate-cost" id ="calculate-cost">
-              <button onClick="calcSub()" class = "btn btn-dark" id="calculate-cost"> Calculate Cost</button> 
+              <button onClick="calcSub()" > Calculate Cost</button> 
                </div>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
       
       

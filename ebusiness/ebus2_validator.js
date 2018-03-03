@@ -119,6 +119,3 @@ function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);
 }
 
-function disablebtnPurchase(){
-     $('#btnPurchase').prop('disabled',true);
-}

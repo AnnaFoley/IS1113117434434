@@ -152,7 +152,7 @@ session_start();
                <br/>    
                
                <div class="btn-confirm" id="btn-confirm">
-               <button type="submit" class="confirm" id="confirm" onClick="validatebooking()" >
+               <button  class="confirm" id="confirm" onClick="validatebooking()" >
                    Confirm Billing Address    
                </button>
                </div>

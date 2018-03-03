@@ -152,7 +152,7 @@ session_start();
                <br/>    
                
                <div class="btn-confirm" id="btn-confirm">
-               <button class="confirm" id="confirm" onClick="validatebooking()" >
+               <button type="submit" class="confirm" id="confirm" onClick="validatebooking()" >
                    Confirm Billing Address    
                </button>
                </div>
@@ -171,11 +171,7 @@ session_start();
                 </label>
                 <input type="radio" id="visa" name="visa">
                 
-                <!--paypal-->
-                <label for "paypal">
-                    Paypal
-                </label>
-                <input type="radio" id="paypal" name="paypal">
+              
                 <br/>
                 
                 <h4>Visa/Debit Card</h4>
@@ -205,13 +201,7 @@ session_start();
                   <input type="number" name="ccv" id="ccv" maxlength="3">
                
                <br/>
-               <h4>Paypal</h4>
-              
-               <label for "username">
-                   Username
-               </label>
-               <input type="text" name="username" id="username">
-               <br/>
+             
                
                <label for "pin"
                 <label for="user_pin">
@@ -230,7 +220,7 @@ session_start();
               
                <br />
              <div class="valdiate" id="valdiate">
-            <button  class = "btn btn-dark"  id="btnvalidate"   disabled onClick="validateDetails()">
+            <button  class = "btn btn-dark"  id="btnvalidate"   onClick="validateDetails()" disabled>
                  Validate </button>
                   </div>
       

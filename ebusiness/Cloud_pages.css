@@ -1,24 +1,20 @@
 
-ul {
-    list-style-type: none;
+#nav-bar{list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: grey;
+    color:white;
 }
+    
 
-
-li a {
-    float: left;
-}
-
-
-li a {
-    display: block;
+ li {  
+     float:left;
+     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
-    text-decoration: none;
+     text-decoration: none;
 }
 .mainheading{
     text-align:center;
@@ -31,22 +27,14 @@ body {
 }
 
 background-image{
-    size:cover;
+    background-size:cover;
 margin-left:auto;
 margin-right:auto;
 background-attachment:fixed;
 }    
 
-ul b{
-            text-align:center;
-            list-style-type:none;
-            float:none;
-            overflow:hidden;
-            color:white;
-            font-size:120%
-        
+       
             
-}
 
 button {
     background-color: #e7e7e7; /* Grey */
@@ -60,5 +48,10 @@ button {
     width: 250px;
 }
 
+p{
+    text-align: center;
+    color:black;
+    background-color: white;
+}
 
 

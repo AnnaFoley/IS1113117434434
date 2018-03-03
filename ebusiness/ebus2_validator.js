@@ -18,7 +18,7 @@ function validatebooking(){
    street = document.getElementById("street").value;
    county = document.getElementById("counties").value;
  number = document.getElementById("mobile").value;
- town = document.getElementById("town").value
+ town = document.getElementById("town").value;
  
  //if statement to ensure all the correct details for billing are filled in
   if (name==""){
@@ -46,22 +46,42 @@ function validatebooking(){
     else if (number==""){
         alert("Please enter your mobile number");
     }
- else {
-       enablebtnvalidate();
+    else {
+        enablebtnbtnvalidate();
     }
+
 }
-    function enablebtnvalidate(){
+function enablebtnbtnvalidate(){
      $('#btnvalidate').prop('disabled',false);
-}
+
+  function disablebtnvalidate(){
+        $('#btnvalidate').prop('disabled',true);
+
+  }
 function validateDetails(){
+    //declaring variables
     var pin;
-   
+    var visa;
+  
+    var cardname;
+    var cardnumber;
+    var expirydate;
+    var ccv;
+  
+    
    
 //assigning values to the variables 
     pin = document.getElementById("user_pin").value;
-       
+    visa = document.getElementById("visa").value;
+ 
+    cardname = document.getElementById("cardname").value;
+    cardnumber = document.getElementById("cardnumber").value;
+    expirydate = document.getElementById("expiry-date").value;
+    ccv = document.getElementById("ccv").value;
+   
    
 //if statement to ensure all details are entered correct before carrying on 
+
     if (pin == ""){
         alert("Please enter your PIN");
        
@@ -70,6 +90,23 @@ function validateDetails(){
         alert("Please make sure your PIN is accurate");
         
     }
+    else if (visa==""){
+        alert("Please choose a form of payment");
+    }
+  
+    else if (cardname==""){
+        alert("Please enter the name of the card holder ");
+    }
+    else if (cardnumber==""){
+        alert("Please enter the number of the card");
+    }
+    else if (expirydate==""){
+        alert("Please enter the expiry date on the card");
+        }
+        else if (ccv==""){
+            alert("Please enter the CCV number on the back of the card");
+        }
+     
     else {
         enablebtnPurchase();
     }

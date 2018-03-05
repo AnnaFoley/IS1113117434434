@@ -10,6 +10,7 @@ session_start();
         <script type="text/javascript" src="ebus2_validator.js"></script>
 
  <!--tab on the top of the page so can go back home  or on to the next page-->
+ <div class="nav-bar" id="nav-bar">
                 <ul>
             <li> <a href="..//homepage.html">Home</a></li>
              <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
@@ -17,7 +18,7 @@ session_start();
             <li> <a href="AboutCloud.html"> About Clouds</a></li>
             <li> <a href="EBus1.php">Select a product</a></li>
        </ul>
-       
+       </div>
         <title> Enter Details</title>
         
         
@@ -36,8 +37,8 @@ session_start();
                        width: 250px;
                        position:absolute;
                        top:450px;
-                       right:320px;
-                       left:50px;
+                       right:100px;
+                       left:870px;
             }
             
             #valdiate{
@@ -46,10 +47,10 @@ session_start();
                        font-size: 12px;
                        border-radius: 8px;
                        width: 250px;
-                       position:absolute;
-                       top:540px;
-                       right:360px;
-                       left:730px;
+                         position:absolute;
+                         top:400px;
+                       right:100px;
+                       left:870px;
             }
             
             
@@ -57,8 +58,8 @@ session_start();
             
             #billing{position:absolute;
                     top:150px;
-                    right:500px;
-                    left:150px;
+                    right:600px;
+                    left:200px;
                     width:400px;
                     height:350px;
                     border-style:double;
@@ -67,9 +68,9 @@ session_start();
             #payment{ position:absolute;
                         top:150px;
                         right:150px;
-                        left:700px;
+                        left:800px;
                           width:400px;
-                    height:500px;
+                    height:450px;
                     border-style: double;
             }
             
@@ -80,8 +81,8 @@ session_start();
                        width: 250px;
                        position:absolute;
                        top:280px;
-                       right:920px;
-                       left:70px;
+                       right:600px;
+                       left:60px;
                 
             }
         </style>
@@ -91,15 +92,10 @@ session_start();
     <body>
         
         <h1>Checkout</h1>
-        
-            <br />
-            
-            
-         
-<br/>
-                <form method="POST" action="EBus3.php">
+    
+     <form method="POST" action="EBus3.php">
                     
-                    <div class="billing" id="billing">
+            <div class="billing" id="billing">
                 <h3> Billing Address</h3>
                    <!--email and name needed-->
                 <label for "FirstName">
@@ -149,31 +145,23 @@ session_start();
                </label>
                <input type="number" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10">
                
-               <br/>    
-               
-               <div class="btn-confirm" id="btn-confirm">
+               <!-- when click on the confirm button the validatebooking is activated which will enable the validate button for the payment process-->
+                  <div class="btn-confirm" id="btn-confirm">
                <button  class="confirm" id="confirm" onClick="validatebooking()" >
                    Confirm Billing Address    
                </button>
+                
                </div>
-             </div>
+
+         </div>
+    </form>
                
-               </form>
+            
                
                   <form method="POST" action="EBus3.php">
                       <div class="payment" id="payment">
                 <h3>Please enter your payment details.</h3>
-                
-                <!--radio buttons to which way to pay-->
-                <!--visa-->
-                <label for "visa">
-                    Visa/Debit Card
-                </label>
-                <input type="radio" id="visa" name="visa">
-                
               
-                <br/>
-                
                 <h4>Visa/Debit Card</h4>
             
                <label for "cardname">
@@ -185,7 +173,7 @@ session_start();
                <label for "cardnumber">
                    Card Number
                </label>
-               <input type="text" name="cardnumber" id="cardnumber" maxlength="20">
+               <input type="number" name="cardnumber" id="cardnumber" maxlength="20">
                
                <br/>
                <label for "expiry-date">
@@ -209,18 +197,19 @@ session_start();
                 </label>
                 
                 <input type="password" name="user_pin" id="user_pin" placeholder="Card Pin" maxlength="4">
-                    <br/>
+             
+             
+            </div>
+            </form>
+                     <br/>
                     <div class="purchase" id="purchase">
                 <button class = "btn btn-dark" type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
               </div>
-            </div>
-            </form>
-              
                <br />
              <div class="valdiate" id="valdiate">
-            <button  class = "btn btn-dark"  id="btnvalidate"   onClick="validateDetails()" disabled>
+            <button  class = "btn btn-dark"  id="btnvalidate"   onClick="validateDetails()" >
                  Validate </button>
                   </div>
       

@@ -8,6 +8,7 @@ session_start();
         
     <head>
           <!--tab on the top of the page so can go back home  or on to the next page-->
+          <div class="nav-bar" id="nav-bar">
                 <ul>
             <li> <a href="..//homepage.html">Home</a></li>
              <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
@@ -15,6 +16,7 @@ session_start();
             <li> <a href="AboutCloud.html"> About Clouds</a></li>
             <li> <a href="EBus1.php">Select a product</a></li>
        </ul>
+       </div>
         <title>Select Product</title>
         
         
@@ -31,9 +33,9 @@ session_start();
                        border-radius: 8px;
                        width: 250px;
                        position:absolute;
-                       top:490px;
+                       top:500px;
                        right:300px;
-                       left:460px;
+                       left:550px;
                        }
          #shopping-cart{padding: 12px 28px;
                        background-color: rgb(208, 83, 71);
@@ -41,9 +43,9 @@ session_start();
                        border-radius: 8px;
                        width: 250px;
                         position:absolute;
-                       top:440px;
+                       top:450px;
                        right:300px;
-                       left:460px;
+                       left:550px;
           
   
          }

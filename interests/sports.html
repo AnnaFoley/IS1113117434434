@@ -1,78 +1,35 @@
 <!DOCTYPE>
 <html>
    
-    <head>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+     <head>
+        <meta charset="utf-8"/>
+        <title>Travel</title>
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+         <link rel="stylesheet" href="int_pages.css" type="text/css"/>
        
-<style type="text/css"/>
-#camogie {background-color: white;
-                    margin:auto;
-                      text-align:center;
-	                width:40%;
-	                height:40%;
-	                border:solid thin black;
-}
-
-#camogie-logo{width:300px;
-                           height:300px;
-                           position:absolute;
-                           top:130px;
-                           right:300px;
-                           left:1100px;
-                           border:solid thin black;
- 
-}
-
-#football{ background-color: white;
-                    margin:auto;
-                      text-align:center;
-	                width:40%;
-	                height:30%;
-	                border:solid thin black;
-}
- #football-logo{width:300px;
-                           height:300px;
-                           position:absolute;
-                           top:430px;
-                           right:300px;
-                           left:1100px;
-                           border:solid thin black;
- }
- #badminton{background-color: white;
-                    margin:auto;
-                      text-align:center;
-	                width:40%;
-	                height:25%;
-	                border:solid thin black;
-	                
-     
- }
-#badminotn-logo{
-                            width:300px;
-                           height:300px;
-                           position:absolute;
-                           top:700px;
-                           right:300px;
-                           left:1100px;
-                           border:solid thin black;
-}
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
+<!--adding pagepilling-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+   
+   <script type="text/javascript">
+       $(document).ready(function() {
+	$('#pagepiling').pagepiling();
+});
 
-
-
-</style>
-
+   </script>
     </head>
+    
     <body>
        
       
          <h1 class="mainheading" style =" text-decoration: underline"> Sports</h1>
-       
+       <div class="pagepilling" id="pagepilling">
          <!--section on camogie-->
          <h4 class="othersports"  style =" text-decoration: underline"> Camogie</h4>
          
@@ -94,7 +51,7 @@
         <h4 class="othersports"  style =" text-decoration: underline"> Football</h4>
         <div class="football" id="football">
        <p><strong>Training:</strong> Mondays  and Fridays and Sunday<br/>
-        <strong>Club: </strong> <br/>
+        <strong>Club: </strong>Banteer <br/>
         <strong>Club Colours: </strong> Red and White and Black<br/>
         <strong>Positon:</strong>Centre Back<br/>
         <strong>Age Started PLaying :</strong> I started playeing I was 10 years old after alot of persuation from friends and local members.<br/>
@@ -115,7 +72,7 @@
         </div>
         <img  clas="badminton-logo" id="badminotn-logo" src="http://dunmorebadmintonclub.com/wp/wp-content/uploads/2014/10/badminton-ireland-logo.jpg" style="float:right;width:150px;height:150px;"></p>
         <br/>
-       
+       </div>
        
       <a href="..//homepage.html" class = "btn btn-light">Home</a>
      

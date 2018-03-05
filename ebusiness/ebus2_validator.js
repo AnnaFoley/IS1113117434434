@@ -1,72 +1,16 @@
 /* global $ */
 
-//function to ensure the booking address is filled in 
-function validatebooking(){
-    
- //delcaring variables
- var last;
- var name;
- var address;
- var street;
- var county;
- var email;
- var number;
- var town;
-  
-   //assigning values to the variables
-    name = document.getElementById("user_name").value;
-   email= document.getElementById("user_email").value;
-   last = document.getElementById("lastname").value;
-   address = document.getElementById("address").value;
-   street = document.getElementById("street").value;
-   county = document.getElementById("counties").value;
-    number = document.getElementById("mobile").value;
-    town = document.getElementById("town").value;
  
- //if statement to ensure all the correct details for billing are filled in
-  if (name==""){
-        alert("Please enter your Name");
-    }
-       
-    else if (email==""){
-        alert("Please enter your E-mail Address");
-    }
-    else if (last==""){
-        alert("Please enter your last name");
-    }
-    else if (address==""){
-        alert("Please enter your address");
-    }
-    else if (street==""){
-        alert("Please enter your street address");
-    }
-    else if (town==""){
-        alert("Please enter your Town/city");
-    }
-    else if (county==""){
-    alert("Please enter your county");
-    }
-    else if (number==""){
-        alert("Please enter your mobile number");
-    }
-else {
-        enablebtnvalidate();
-    }
-
-}
-
-//function to enable the validate button 
-function enablebtnvalidate(){
-     $('#btnvalidate').prop('disabled',false);
-}
-  function disablebtnvalidate(){
-        $('#btnvalidate').prop('disabled',true);
-  }
-  
-  
-  //function to ensure the payment details are entered and the purchase button is enabled 
 function validateDetails(){
-    //declaring variables
+    //declaring variables 
+     var last;
+     var name;
+    var address;
+    var street;
+    var county;
+    var email;
+    var number;
+    var town;
     var pin;
     var visa;
     var cardname;
@@ -75,8 +19,15 @@ function validateDetails(){
     var ccv;
   
     
-   
-//assigning values to the variables 
+ //assigning values to the variables 
+    name = document.getElementById("user_name").value;
+   email = document.getElementById("user_email").value;
+   last = document.getElementById("lastname").value;
+   address = document.getElementById("address").value;
+   street = document.getElementById("street").value;
+   county = document.getElementById("counties").value;
+    number = document.getElementById("mobile").value;
+    town = document.getElementById("town").value;
     pin = document.getElementById("user_pin").value;
     visa = document.getElementById("visa").value;
     cardname = document.getElementById("cardname").value;
@@ -85,32 +36,65 @@ function validateDetails(){
     ccv = document.getElementById("ccv").value;
    
    
-//if statement to ensure all details are entered correct before carrying on 
-    if (pin == ""){
+//statement to ensure all details are entered correct before carrying on 
+   
+     if (name ==""){
+        alert("Please enter your Name");
+    }
+       
+    else if (email ==""){
+        alert("Please enter your E-mail Address");
+    }
+    else if (last ==""){
+        alert("Please enter your last name");
+    }
+    else if (address ==""){
+        alert("Please enter your address");
+    }
+    else if (street ==""){
+        alert("Please enter your street address");
+    }
+    else if (town ==""){
+        alert("Please enter your Town/city");
+    }
+    else if (county ==""){
+    alert("Please enter your county");
+    }
+    else if (number ==""){
+        alert("Please enter your mobile number");
+    }
+
+    else if (pin == ""){
         alert("Please enter your PIN");
         }
     else if (String(pin).length<4){
         alert("Please make sure your PIN is accurate");
     }
-    else if (visa==""){
+    else if (visa ==""){
         alert("Please choose a form of payment");
     }
-    else if (cardname==""){
+    else if (cardname ==""){
         alert("Please enter the name of the card holder ");
     }
-    else if (cardnumber==""){
+    else if (cardnumber ==""){
         alert("Please enter the number of the card");
     }
-    else if (expirydate==""){
+    else if (String(cardnumber).length<16)
+    alert("Please ensure your Card Number is accurate.");
+    }
+    else if (expirydate ==""){
         alert("Please enter the expiry date on the card");
         }
-        else if (ccv==""){
+        else if (ccv ==""){
             alert("Please enter the CCV number on the back of the card");
+        }
+        else if (String(ccv).length<3){
+            alert("Please make sure your CCV number is accurate. It is located on the back of the card");
         }
     else {
         enablebtnPurchase();
     }
-}
+
 
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);

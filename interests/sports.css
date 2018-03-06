@@ -15,14 +15,16 @@ background-attachment: fixed;
   
 }
 #section6{
-    background-image: url("https://www.irishtimes.com/polopoly_fs/1.1913296.1409498029!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");
+    background-image: url("https://www.limerickpost.ie/site/wp-content/uploads/CCN_7457.jpg");
  background:cover;
       background-repeat: no-repeat;
-   
+   color:black;
 }
-#section7{background-image: url("http://img2.thejournal.ie/article/3225452/river?version=3225565&width=1340");
+#section7{
+    background-image: url("http://sportsnewsireland.com/wp-content/uploads/2016/07/tg4-ladies-football-championship-launch-3-752x501.jpg");
     background:cover;
       background-repeat: no-repeat;
+       color:black;
 }
 #section8{
     background-image: url("http://system.bwf.website/uploads/2016/04/17/Bonny%20China%20Masters%202015%20-%20MD%20%281%29.jpg");

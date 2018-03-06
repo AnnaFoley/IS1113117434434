@@ -7,7 +7,7 @@ session_start();
     
     <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
-        <script type="text/javascript" src="ebus2_validator.js"></script>
+        <script type="text/javascript" src="ebus_validator.js"></script>
 
  <!--tab on the top of the page so can go back home  or on to the next page-->
  <div class="nav-bar" id="nav-bar">
@@ -27,7 +27,50 @@ session_start();
         
         <style type="text/css">
             
-            
+             body {
+    background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
+    text-align:center;
+    font-size:120%;
+}
+background-image{
+    background-size:cover;
+margin-left:auto;
+margin-right:auto;
+background-attachment:fixed;
+}    
+
+button {
+    background-color: #e7e7e7; /* Grey */
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 250px;
+}
+
+#nav-bar{list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: LightGrey;
+    color:black;
+}
+    
+
+ li {  
+     float:left;
+     display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+     text-decoration: none;
+}
+
+.mainheading{
+    text-align:center;
+}
             
             #purchase{
                 padding: 12px 28px;

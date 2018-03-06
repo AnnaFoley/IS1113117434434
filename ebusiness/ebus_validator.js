@@ -1,4 +1,4 @@
-/* global $ */
+/* global $*/
 
 function validateDetails(){
     
@@ -19,20 +19,20 @@ function validateDetails(){
   
     
  //assigning values to the variables 
-    name = document.getElementById("user_name").value;
-   email = document.getElementById("user_email").value;
-   last = document.getElementById("lastname").value;
-   address = document.getElementById("address").value;
-   street = document.getElementById("street").value;
-   county = document.getElementById("counties").value;
-    number = document.getElementById("mobile").value;
-    town = document.getElementById("town").value;
-    pin = document.getElementById("user_pin").value;
-    visa = document.getElementById("visa").value;
-    cardname = document.getElementById("cardname").value;
-    cardnumber = document.getElementById("cardnumber").value;
-    expirydate = document.getElementById("expiry-date").value;
-    ccv = document.getElementById("ccv").value;
+    name = document.getElementById('user_name').value;
+   email = document.getElementById('user_email').value;
+   last = document.getElementById('lastname').value;
+   address = document.getElementById('address').value;
+   street = document.getElementById('street').value;
+   county = document.getElementById('counties').value;
+    number = document.getElementById('mobile').value;
+    town = document.getElementById('town').value;
+    pin = document.getElementById('user_pin').value;
+    visa = document.getElementById('visa').value;
+    cardname = document.getElementById('cardname').value;
+    cardnumber = document.getElementById('cardnumber').value;
+    expirydate = document.getElementById('expiry-date').value;
+    ccv = document.getElementById('ccv').value;
    
    
 //statement to ensure all details are entered correct before carrying on 

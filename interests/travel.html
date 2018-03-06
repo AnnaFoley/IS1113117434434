@@ -5,9 +5,10 @@
         <title>Travel</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
          <link rel="stylesheet" href="int_pages.css" type="text/css"/>
+         
        
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
@@ -20,17 +21,40 @@
        $(document).ready(function() {
 	$('#pagepiling').pagepiling();
 });
+  </script>
+ <style  type="text/css">
+     
+     #next{
+     background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    font-size: 16px;
+}
 
-   </script>
+#back{background-color:#e7e7e7; 
+    border: none;
+    color: black;
+    padding:14px 40px;
+    text-align: center;
+    text-decoration: none;
+     width: 250px;
+    font-size: 16px;
+    
+}
+ </style>
      <!--tab on the top of the page so can go back home  or on to the next page-->
             <div class="nav-bar" id="nav-bar"> 
                 <ul>
                     <li> <a href="..//homepage.html">Home</a></li>
                      <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
                       <li> <a href="..//interests/sports.html">Interests(Sports)</a></li>
-                      <li> <a href="..//ebusiness/cloud_vendor.html">In the Sky</a></li>
-                    <li> <a href="..//ebusiness/AboutCloud.html"> About Clouds</a></li>
-                    <li> <a href="..//ebusiness/EBus1.php">Select a product</a></li>
+                      <li> <a href="..//cloud_vendor.html">In the Sky</a></li>
+                    <li> <a href="AboutCloud.html"> About Clouds</a></li>
+                    <li> <a href="EBus1.php">Select a product</a></li>
                </ul>
             </div> 
     </head>
@@ -57,8 +81,12 @@
 	    
 	    <!--buttons-->
 	    <p>
-        <a href="sports.html" class= "btn btn-dark">Previous</a>
-        <a href="cloud.html" class="btn btn-success">Next</a>
+	    <button>
+        <a href="sports.html" class= "btn btn-dark" id="back">Previous</a>
+        </button>
+        <button>
+        <a href="cloud.html" class="btn btn-sucess" id="next">Next</a>
+        </button>
         </p>
 	</div>
 	

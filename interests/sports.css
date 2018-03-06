@@ -1,0 +1,57 @@
+.section{
+    text-align: center;
+    color: white;
+    background:cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+background-image{  size: cover;
+margin-left:  auto;
+margin-right: auto;
+background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  
+}
+#section6{
+    background-image: url("https://www.irishtimes.com/polopoly_fs/1.1913296.1409498029!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");
+ background:cover;
+      background-repeat: no-repeat;
+   
+}
+#section7{background-image: url("http://img2.thejournal.ie/article/3225452/river?version=3225565&width=1340");
+    background:cover;
+      background-repeat: no-repeat;
+}
+#section8{
+    background-image: url("http://system.bwf.website/uploads/2016/04/17/Bonny%20China%20Masters%202015%20-%20MD%20%281%29.jpg");
+     background:cover;
+      background-repeat: no-repeat;
+}
+
+#section9{
+    background-image: url("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAv8AAAAJGI5MTU3YjhiLTdlZGItNDYwZS1iOTdiLWRiOTk0NGRhYjRkOQ.jpg");
+ background:cover;
+      background-repeat: no-repeat;
+}
+#nav-bar{list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 179;
+    color:black;
+}
+    
+
+ li {  
+     float:left;
+     display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+     text-decoration: none;
+}
+
+
+}

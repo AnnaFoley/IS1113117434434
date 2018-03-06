@@ -7,6 +7,54 @@ session_start();
     <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
         <head>
+            <style type="text/css">
+                
+                 body {
+    background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
+    text-align:center;
+    font-size:120%;
+}
+background-image{
+    background-size:cover;
+margin-left:auto;
+margin-right:auto;
+background-attachment:fixed;
+}    
+
+button {
+    background-color: #e7e7e7; /* Grey */
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 250px;
+}
+
+#nav-bar{list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: LightGrey;
+    color:black;
+}
+    
+
+ li {  
+     float:left;
+     display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+     text-decoration: none;
+}
+
+.mainheading{
+    text-align:center;
+}
+    
+            </style>
             <title>RECIEPT</title>
             <?php
             //Set yhe session variables 

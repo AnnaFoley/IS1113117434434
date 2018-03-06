@@ -1,16 +1,17 @@
 <!DOCTYPE>
 <html>
    
-     <head>
-        <meta charset="utf-8"/>
-        <title>Travel</title>
+      <head>
+          <meta charset="utf-8"/>
+        <title>Sports</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
          <link rel="stylesheet" href="int_pages.css" type="text/css"/>
        
-
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Adding bootstrap-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!--adding pagepilling-->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
@@ -23,19 +24,30 @@
 });
 
    </script>
+   <!--tab on the top of the page so can go back home  or on to the next page-->
+            <div class="nav-bar" id="nav-bar"> 
+                <ul>
+                    <li> <a href="..//homepage.html">Home</a></li>
+                     <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
+                      <li> <a href="..//interests/sports.html">Interests(Sports)</a></li>
+                      <li> <a href="..//cloud_vendor.html">In the Sky</a></li>
+                    <li> <a href="AboutCloud.html"> About Clouds</a></li>
+                    <li> <a href="EBus1.php">Select a product</a></li>
+               </ul>
+            </div> 
     </head>
+    
     
     <body>
        
       
          <h1 class="mainheading" style =" text-decoration: underline"> Sports</h1>
-       <div class="pagepilling" id="pagepilling">
-         <!--section on camogie-->
-         <h4 class="othersports"  style =" text-decoration: underline"> Camogie</h4>
          
-        <img  class="camogie-logo" id="camogie-logo" src="http://kkc.s3.amazonaws.com/uploads/2016/09/Camogie-Logo.jpg" style="float:right;width:150px;height:150px;">
-        <!--creating a seperate div for the text section-->
-        <div class="camogie" id="camogie">
+       <div class="pagepilling" id="pagepilling">
+        
+         <!--creating a seperate div for the text section-->
+        <div class="section" id="section6"style="font-size:150%;">
+         <h4 class="othersports"  style =" text-decoration: underline"> Camogie</h4>
         <p><strong>Training:</strong> Tuesdays and Fridays and Sunday<br/>
        <strong>Club: </strong> Banteer<br/>
         <strong>Club Colours: </strong> Red and White<br/>
@@ -43,13 +55,11 @@
         <strong>Age Started PLaying :</strong> I started playeing I was 7 years old when the club began.<br/>
         <strong>Achievements:</strong> Member of  Banteer Junior A Camogie Team </br>  Junior B County Camogie Champions 2015 <br/> Member of UCC Senior B panel </p>
         </div>
-        
-        <br/>
-        <br/>
-        <br/>
-        
+        <img  class="camogie-logo" id="camogie-logo" src="http://kkc.s3.amazonaws.com/uploads/2016/09/Camogie-Logo.jpg" style="float:right;width:150px;height:150px;">
+       
+      
+          <div class="section" id="section7" style="font-size:150%;">
         <h4 class="othersports"  style =" text-decoration: underline"> Football</h4>
-        <div class="football" id="football">
        <p><strong>Training:</strong> Mondays  and Fridays and Sunday<br/>
         <strong>Club: </strong>Banteer <br/>
         <strong>Club Colours: </strong> Red and White and Black<br/>
@@ -59,25 +69,24 @@
         </div>
          <img class="football-logo" id="football-logo" src=http://ladiesgaelic.ie/wp-content/uploads/2012/03/LOGO.jpg style="float:right;width:150px;height:150px;">
          
-          <br/>
-        <br/>
-        <br/>
+         <!--seperate div fot the badminton section-->
+      <div class= "section" id= "section8" style="font-size:150%;">
          <h4 class="othersports"  style =" text-decoration: underline"> Badminton </h4>
-         <div class="badminton" id="badminton">
        <p><strong>Training:</strong> Wednesday and Tuesday <br/>
         <strong>Club: </strong> Banteer<br/>
-       
         <strong>Age Started PLaying :</strong> I started playeing I was 9 years old when I was old enough to join the club .<br/>
         <strong>Achievements:</strong> Cork U15/17 Badminton Teams <br/>  Silver All-Irelannd Schools Medal Badminton</br> UCC Divison 5 Mixed and Ladies Doubles </p>
+        <br/>
+        <br/>
+        <!--buttons-->
+        <p> <a href="..//homepage.html" class = "btn btn-light">Home</a>
+         <a href="travel.html" class= "btn btn-success"> Next</a></p>
+  
         </div>
         <img  clas="badminton-logo" id="badminotn-logo" src="http://dunmorebadmintonclub.com/wp/wp-content/uploads/2014/10/badminton-ireland-logo.jpg" style="float:right;width:150px;height:150px;"></p>
         <br/>
        </div>
        
-      <a href="..//homepage.html" class = "btn btn-light">Home</a>
      
-     
-         <a href="travel.html" class= "btn btn-success"> Next</a>
-  
         </body>
        </html>

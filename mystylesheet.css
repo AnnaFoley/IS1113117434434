@@ -49,6 +49,7 @@ h1{
                  text-align:center;
     font-size:100%;
     margin:auto;
+   
     width:50%;
     background-color: white;
     border:solid thin black;
@@ -60,6 +61,7 @@ h1{
     text-align:center;
     font-size:100%;
      margin:auto;
+  
     width:50%;
     background-color: white;
     border:solid thin black;
@@ -73,7 +75,7 @@ h1{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(255, 255, 179);
     color:black;
 }
     

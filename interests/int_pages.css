@@ -27,6 +27,11 @@
       background-repeat: no-repeat;
 }
 
+#section5{
+    background-image: url("http://www.jumbotravels.com/wp-content/uploads/2015/08/JTbackground.jpg");
+     background:cover;
+      background-repeat: no-repeat;
+}
 .section{
     text-align: center;
     color: white;
@@ -43,18 +48,37 @@ background-attachment: fixed;
   
   
 }
-#camogie{
+#section6{
     background-image: url("https://cdn-03.independent.ie/regionals/corkman/localnotes/article34381678.ece/0cd63/AUTOCROP/w620/2016-01-21_cor_16210542_I1.JPG");
  background:cover;
       background-repeat: no-repeat;
 }
-#football{background-image: url("http://img2.thejournal.ie/article/3225452/river?version=3225565&width=1340");
+#section7{background-image: url("http://img2.thejournal.ie/article/3225452/river?version=3225565&width=1340");
     background:cover;
       background-repeat: no-repeat;
 }
-#badminotn{
+#section8{
     background-image: url("http://system.bwf.website/uploads/2016/04/17/Bonny%20China%20Masters%202015%20-%20MD%20%281%29.jpg");
      background:cover;
       background-repeat: no-repeat;
 }
-  
+
+
+#nav-bar{list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 179;
+    color:black;
+}
+    
+
+ li {  
+     float:left;
+     display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+     text-decoration: none;
+}
+

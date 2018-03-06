@@ -25,6 +25,7 @@ session_start();
         <script type="text/javascript" src="cost_calc.js"></script>
         
         <style type="text/css">
+        
          body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
     text-align:center;

@@ -7,7 +7,7 @@ session_start();
     
     <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
-        <script type="text/javascript" src="ebus_validator.js"></script>
+     
 
  <!--tab on the top of the page so can go back home  or on to the next page-->
  <div class="nav-bar" id="nav-bar">
@@ -24,7 +24,7 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
+           <script type="text/javascript" src="ebus_validator.js"></script>
         <style type="text/css">
             
              body {
@@ -181,12 +181,10 @@ button {
                <label for="number">
                    Mobile Number
                </label>
-               <input type="number" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10">
-               
-               
-                
+               <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10">
                </div>
-<!--seperate section for the payment of the cloud but the same form-->  
+               
+    <!--seperate section for the payment of the cloud but the same form-->  
         <div class="payment" id="payment">
                 <h3>Please enter your payment details.</h3>
               
@@ -201,7 +199,7 @@ button {
                <label for "cardnumber">
                    Card Number
                </label>
-               <input type="number" name="cardnumber" id="cardnumber"placeholder="Card Number" maxlength="16">
+               <input type="text" class="cardnumber" id="cardnumber"placeholder="Card Number" maxlength="16">
                
                <br/>
                <label for "expiry-date">
@@ -214,7 +212,7 @@ button {
               <label for "ccv">
                   CCV Number
                   </label>
-                  <input type="number" name="ccv" id="ccv"  placeholder="CCV Number"maxlength="3">
+                  <input type="text" name="ccv" id="ccv"  placeholder="CCV Number"maxlength="3">
                
                <br/>
              
@@ -233,11 +231,14 @@ button {
                     Proceed with Purchase 
                 </button>
               </div>
+              
             </form>
+            
                <br />
+               
              <div class="valdiate" id="valdiate">
-            <button  class = "btn btn-dark"  id="btnvalidate"   onClick="validateDetails()" >
-                 Validate </button>
+            <button   onClick="validateDetails()" >
+                 Validate Details  </button>
                   </div>
       
         

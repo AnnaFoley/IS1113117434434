@@ -10,12 +10,7 @@ function validateDetails(){
     var email;
     var number;
     var town;
-    var pin;
-    var visa;
-    var cardname;
-    var cardnumber;
-    var expirydate;
-    var ccv;
+    
   
     
  //assigning values to the variables 
@@ -27,16 +22,9 @@ function validateDetails(){
    county = document.getElementById('counties').value;
     number = document.getElementById('mobile').value;
     town = document.getElementById('town').value;
-    pin = document.getElementById('user_pin').value;
-    visa = document.getElementById('visa').value;
-    cardname = document.getElementById('cardname').value;
-    cardnumber = document.getElementById('cardnumber').value;
-    expirydate = document.getElementById('expiry-date').value;
-    ccv = document.getElementById('ccv').value;
    
    
 //statement to ensure all details are entered correct before carrying on 
-   
      if (name ==""){
         alert("Please enter your Name");
     }
@@ -44,58 +32,80 @@ function validateDetails(){
     else if (email ==""){
         alert("Please enter your E-mail Address");
     }
-    else if (last ==""){
+   else  if (last ==""){
         alert("Please enter your last name");
     }
-    else if (address ==""){
+   else if (address ==""){
         alert("Please enter your address");
     }
-    else if (street ==""){
+     else if (street ==""){
         alert("Please enter your street address");
     }
-    else if (town ==""){
+     else if (town ==""){
         alert("Please enter your Town/city");
     }
-    else if (county ==""){
+      else if (county ==""){
     alert("Please enter your county");
     }
-    else if (number ==""){
+       else if (number ==""){
         alert("Please enter your mobile number");
     }
 
-    else if (pin == ""){
+  validatepayment();  
+    enablebtnPurchase();
+     
+ 
+}
+
+function validatepayment(){
+    
+    //variables for payment
+var pin;
+  
+    var cardname;
+    var cardnumber;
+    var expirydate;
+    var ccv;
+
+
+//assigning values to the payment variables
+ pin = document.getElementById('user_pin').value;
+ 
+    cardname = document.getElementById('cardname').value;
+    cardnumber = document.getElementById('cardnumber').value;
+    expirydate = document.getElementById('expiry-date').value;
+    ccv = document.getElementById('ccv').value;
+   
+   
+   //if statement to ensure the payment section is completed
+      if (pin == ""){
         alert("Please enter your PIN");
         }
-    else if (String(pin).length<4){
+        else if (String(pin).length<4){
         alert("Please make sure your PIN is accurate");
-    }
-    else if (visa ==""){
-        alert("Please choose a form of payment");
-    }
-    else if (cardname ==""){
+        }
+     else if (cardname ==""){
         alert("Please enter the name of the card holder ");
     }
-    else if (cardnumber ==""){
+     else if (cardnumber ==""){
         alert("Please enter the number of the card");
     }
-    else if (String(cardnumber).length<16){
+        else if (String(cardnumber).length<16){
     alert("Please ensure your Card Number is accurate.");
     }
     else if (expirydate ==""){
         alert("Please enter the expiry date on the card");
         }
-        else if (ccv ==""){
+   else if (ccv ==""){
             alert("Please enter the CCV number on the back of the card");
         }
-        else if (String(ccv).length<3){
+      else if (String(ccv).length<3){
             alert("Please make sure your CCV number is accurate. It is located on the back of the card");
         }
-    else {
-        enablebtnPurchase();
-    }
+       enablebtnPurchase();
+  
 }
-
-
+        
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);
 }

@@ -8,7 +8,7 @@
          
        
 
-
+<!--adding j-query-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
@@ -17,6 +17,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
    
+   <!--j-query-->
    <script type="text/javascript">
        $(document).ready(function() {
 	$('#pagepiling').pagepiling();
@@ -33,6 +34,10 @@
     text-decoration: none;
     width: 250px;
     font-size: 16px;
+     position:absolute;
+    top:500px;
+    left:700px;
+    right:400px;
 }
 
 #back{background-color:#e7e7e7; 
@@ -43,6 +48,10 @@
     text-decoration: none;
      width: 250px;
     font-size: 16px;
+    position:absolute;
+    top:500px;
+    left:450px;
+    right:300px;
     
 }
  </style>
@@ -59,25 +68,27 @@
             </div> 
     </head>
     <body>
-
+        <!--div for the the j-query to work-->
         <div id="pagepiling">
+            <!--cover page for the travel section-->
             <div class="section" id="section5" style="font-size:400%; color:black;"> <strong> Travel</strong></div>
-            
+            <!--div for my favourite place-->
     <div class="section" id="section1"   style="font-size:150%;"> <strong>Favouite place Traveled to:  </strong>
-    </br>  Bahrain (Middle East) 
+    <br>  Bahrain (Middle East) 
     </div>
-    
-	<div class="section" id="section2" style="font-size:150%;"> <strong>Most Travelled to:</strong></br> Spain </br> London </div>
+    <!--div for my most travelled to place-->
+	<div class="section" id="section2" style="font-size:150%;"> <strong>Most Travelled to:</strong></br> Spain <br> London </div>
+	<!--dic for where I want to visit-->
+	<div class="section" id="section3" style="font-size:150%;"><strong> Place I Want to visit:</strong><br>    Australia <br> Iceland <br> Paris</div>
 	
-	<div class="section" id="section3" style="font-size:150%;"><strong> Place I Want to visit:</strong></br>    Australia </br> Iceland </br> Paris</div>
-	
+	<!--div for place to would like to live in-->
 	<div class="section" id="section4"  style="font-size:150%;"> <strong>Where I would like to Live at some time in the future :</strong>
-	   </br>
-	    New York </br> London </br> Austrila
+	   <br>
+	    New York <br> London <br> Austrila
 	    
 	    
-	    </br>
-	    </br>
+	    <br>
+	    <br>
 	    
 	    <!--buttons-->
 	    <p>

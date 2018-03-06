@@ -127,9 +127,9 @@ button {
     <body>
         
         <h1>Checkout</h1>
-    
+    <!--form to move on to the next page-->
       <form method="POST" action="EBus3.php">
-                    
+                    <!--div for the billing address-->
             <div class="billing" id="billing">
                 <h3> Billing Address</h3>
                    <!-- First  name needed-->
@@ -137,14 +137,14 @@ button {
                    First Name
                      </label>
                 <input tpye="text" name="user_name" id="user_name" placeholder="First Name" maxlength="30">
-                <br/>
+                <br>
                 <!--last name needed-->
                 <label for "LastName">
                     Last Name
                 </label>
                 <input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="15">
                 
-                </br>
+                <br>
                  <!--1st line of address-->
                  <label for "address">
                    Address
@@ -152,32 +152,34 @@ button {
               
                     <input type="text" name="address" id="address" placeholder="Address" maxlength="30">
                     
-                    <br/>
+                    <br>
                     <!--2nd line of address-->
                     <label for "street">
                         Street
                     </label>
                     <input type="text" name="street" id="street" placeholder="Street" maxlength="30">
                     
-                    <br/>
+                    <br>
                     <!--town/city/village of address-->
                     <label for "town">
                         Town/City
                     </label>
                     <input type="text" name="town" id="town" placeholder="Town/City">
-                    <br/>
+                    <br>
                     <!--the county of address--> 
                     <label for "counties">
                     Counties
                     </label>
                     <input type="tex" name="counties" id="counties" placeholder="Counties" maxlength="20">
                     
-                    <br/>
+                    <br>
+                    <!--tetxtbox fot the email address-->
                     <label for "email">
                     E-mail Address
                      </label>
                 <input type="text" name="user_email" id="user_email" placeholder="E-mail" maxlength="30">
-               <br/>
+               <br>
+               <!--textbox for mobile number-->
                <label for="number">
                    Mobile Number
                </label>
@@ -189,32 +191,35 @@ button {
                 <h3>Please enter your payment details.</h3>
               
                 <h4>Visa/Debit Card</h4>
-            
+            <!--textbox for the card holders name-->
                <label for "cardname">
                Card Holder's Name
                </label>
                <input type="text" name="cardname" id="cardname" maxlength="30">
-               <br/>
-               
+               <br>
+               <!--textbox for the card number, can't be more than 16 numbers-->
                <label for "cardnumber">
                    Card Number
                </label>
                <input type="text" class="cardnumber" id="cardnumber"placeholder="Card Number" maxlength="16">
                
-               <br/>
+               <br>
+               
+               <!--textbox for the expiry date of the card-->
                <label for "expiry-date">
                    Expiry Date
                </label>
                <input type="date" name="expiry-date" id="expiry-date" placeholder="Expiry Date">
                
                
-              <br/>
+              <br>
+              <!--textbox for the ccv number on the back of the card, can't be more than 3 numbers--> 
               <label for "ccv">
                   CCV Number
                   </label>
                   <input type="text" name="ccv" id="ccv"  placeholder="CCV Number"maxlength="3">
                
-               <br/>
+               <br>
              
                
                <label for "pin"
@@ -225,7 +230,8 @@ button {
                 <input type="password" name="user_pin" id="user_pin" placeholder="Card Pin" maxlength="4">
           
           </div>
-              <br/>
+              <br>
+              <!--purchase button which is disablesed until all details are validated-->
                     <div class="purchase" id="purchase">
                 <button class = "btn btn-dark" type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
@@ -234,8 +240,8 @@ button {
               
             </form>
             
-               <br />
-               
+               <br >
+               <!--button which validates all deatils and enables the purchase buutton by calling the validatedetails function-->
              <div class="valdiate" id="valdiate">
             <button   onClick="validateDetails()" >
                  Validate Details  </button>

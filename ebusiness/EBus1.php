@@ -103,59 +103,63 @@ button {
         
     <h1 class="mianheading">Select a Product </h1>
             
-    </br>
-            
+    <br>
+            <!--from for the selecting of  produts and the calculation of the prices-->
     <form method="POST" action="Ebus2.php">
-                
+                <!--salesforcecheckbox-->
         <label for="salesforce">
         <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
         SalesForce @ $100
         </label>
         
-        </br>
-        
+        <br>
+        <!--Amazon web services checkbox-->
         <label for="aws">
         <input type="radio" id="aws" name="product" checked  onClick="disablebtnProceed()"/>
         Amazon Web Services @ $300
         </label>
         
-        </br>
+        <br>
+        <!--cloud9 checkbox-->
         <label for="cloud9">
         <input type="radio" id="cloud9" name="product" checked  onClick="disablebtnProceed()"/>
         Cloud9 @ $200
         </label>
            
-           </br>
+           <br>
+           <!--gmail checkbox-->
            <label for="gmail">
         <input type="radio" id="gmail" name="product" checked  onClick="disablebtnProceed()"/>
         Gmail @ $400
         </label> 
-         </br>
-         </br>
-            
+         <br>
+         <br>
+            <!--textbox fot the subtotal-->
         <label for="subtotal">
             Sub Total
         <input type="text" id="subtotal" name="subtotal" value="0.00"  readonly/>
          
         </label>
             
-        </br>
+        <br>
+        <!--textbox for discount-->
         <label for="discount">
         Discount @ 5%
         <input type="text" id="discount" name="discount" value="0.00"  readonly/>
         
-         </br>
+         <br>
          (- Discount)
         </label>
             
-            </br>
-            
+            <br>
+            <!--textbox for vat-->
         <label for="vat">
          VAT @ 10%
         <input type="text" id="vat" name="vat" value="0.00"  readonly/>
          
+         <!--textbox for the total - discount + vat-->
         </label>
-             </br>
+             <br>
          <label for= "total">
         Total
         <input type="text" id="total" name="total" value="0.00"  readonly/>
@@ -165,19 +169,21 @@ button {
         </label>
             
         </br>
+        <!--button for continueing on to the nect page, disabled until the cost is calculated-->
         <div class="shopping-cart" id="shopping-cart">
         <button   type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                     </div>
         </form>
             
-        </br> 
+        <br> 
+        <!--button to calculate the cost and enable the purchase button-->
 <div class="calculate-cost" id ="calculate-cost">
               <button onClick="calcSub()" > Calculate Cost</button> 
                </div>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
+               <br>
+               <br>
+               <br>
+               <br>
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
       
       

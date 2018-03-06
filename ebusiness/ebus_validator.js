@@ -1,5 +1,6 @@
 /* global $*/
 
+//function to validate all details 
 function validateDetails(){
     
      var last;
@@ -50,13 +51,13 @@ function validateDetails(){
        else if (number ==""){
         alert("Please enter your mobile number");
     }
-
+//calls validatepayment function to finish validation for details
   validatepayment();  
-    enablebtnPurchase();
+    enablebtnPurchase(); //calls function to enable the purchase button
      
  
 }
-
+//function to finish validating of payment details
 function validatepayment(){
     
     //variables for payment
@@ -102,13 +103,11 @@ var pin;
       else if (String(ccv).length<3){
             alert("Please make sure your CCV number is accurate. It is located on the back of the card");
         }
-       enablebtnPurchase();
+       enablebtnPurchase();//calling the function to encable the purchase button
   
 }
         
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);
 }
-function disablebtnPurchase(){
-      $('#btnPurchase').prop('disabled',true);
-}
+

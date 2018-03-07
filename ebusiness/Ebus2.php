@@ -8,6 +8,7 @@ session_start();
     <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
      
+ <title> Enter Details</title>
 
  <!--tab on the top of the page so can go back home  or on to the next page-->
  <div class="nav-bar" id="nav-bar">
@@ -19,13 +20,13 @@ session_start();
             <li> <a href="EBus1.php">Select a product</a></li>
        </ul>
        </div>
-        <title> Enter Details</title>
+       
         
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-           <script type="text/javascript" src="ebus_validator.js"></script>
-        <style type="text/css">
+           <script  src="ebus_validator.js"></script>
+        <style >
             
              body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -133,20 +134,20 @@ button {
             <div class="billing" id="billing">
                 <h3> Billing Address</h3>
                    <!-- First  name needed-->
-                <label for "FirstName">
+                <label for FirstName>
                    First Name
                      </label>
                 <input tpye="text" name="user_name" id="user_name" placeholder="First Name" maxlength="30">
                 <br>
                 <!--last name needed-->
-                <label for "LastName">
+                <label for LastName>
                     Last Name
                 </label>
                 <input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="15">
                 
                 <br>
                  <!--1st line of address-->
-                 <label for "address">
+                 <label for address>
                    Address
                  </label>
               
@@ -154,33 +155,33 @@ button {
                     
                     <br>
                     <!--2nd line of address-->
-                    <label for "street">
+                    <label for street>
                         Street
                     </label>
                     <input type="text" name="street" id="street" placeholder="Street" maxlength="30">
                     
                     <br>
                     <!--town/city/village of address-->
-                    <label for "town">
+                    <label for town>
                         Town/City
                     </label>
                     <input type="text" name="town" id="town" placeholder="Town/City">
                     <br>
                     <!--the county of address--> 
-                    <label for "counties">
+                    <label for counties>
                     Counties
                     </label>
-                    <input type="tex" name="counties" id="counties" placeholder="Counties" maxlength="20">
+                    <input type="text" name="counties" id="counties" placeholder="Counties" maxlength="20">
                     
                     <br>
                     <!--tetxtbox fot the email address-->
-                    <label for "email">
+                    <label for email>
                     E-mail Address
                      </label>
                 <input type="text" name="user_email" id="user_email" placeholder="E-mail" maxlength="30">
                <br>
                <!--textbox for mobile number-->
-               <label for="number">
+               <label for number>
                    Mobile Number
                </label>
                <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10">

@@ -7,6 +7,8 @@ session_start();
     <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
     <head>
+       <title>Select Product</title>
+       
           <!--tab on the top of the page so can go back home  or on to the next page-->
           <div class="nav-bar" id="nav-bar">
                 <ul>
@@ -17,7 +19,7 @@ session_start();
             <li> <a href="EBus1.php">Select a product</a></li>
        </ul>
        </div>
-        <title>Select Product</title>
+     
         
         
         <!--JQuery-->
@@ -27,49 +29,50 @@ session_start();
         <style type="text/css">
         
          body {
-    background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
-    text-align:center;
-    font-size:120%;
-}
-background-image{
-    background-size:cover;
-margin-left:auto;
-margin-right:auto;
-background-attachment:fixed;
-}    
+           background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
+          text-align:center;
+          font-size:120%;
+         }
+     background-image{
+          background-size:cover;
+          margin-left:auto;
+          margin-right:auto;
+          background-attachment:fixed;
+         }    
 
-button {
-    background-color: #e7e7e7; /* Grey */
-    border: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    width: 250px;
-}
+       button {
+           background-color: #e7e7e7; /* Grey */
+           border: none;
+           color: black;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 12px;
+           width: 250px;
+       }
 
-#nav-bar{list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: LightGrey;
-    color:black;
-}
+      #nav-bar{
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: LightGrey;
+         color:black;
+        }
     
 
- li {  
-     float:left;
-     display: block;
-    color: black;
-    text-align: left;
-    padding: 14px 16px;
-     text-decoration: none;
-}
+       li {  
+             float:left;
+             display: block;
+            color: black;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-.mainheading{
-    text-align:center;
-}
+       .mainheading{
+              text-align:center;
+        }
          
          #calculate-cost{padding: 12px 28px;
                        background-color: rgb(208, 83, 71);
@@ -97,9 +100,9 @@ button {
         </style>
         
         
-  </head>
+</head>
   
-    <body>
+ <body>
         
     <h1 class="mianheading">Select a Product </h1>
             
@@ -177,7 +180,7 @@ button {
             
         <br> 
         <!--button to calculate the cost and enable the purchase button-->
-<div class="calculate-cost" id ="calculate-cost">
+        <div class="calculate-cost" id ="calculate-cost">
               <button onClick="calcSub()" > Calculate Cost</button> 
                </div>
                <br>
@@ -187,6 +190,6 @@ button {
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
       
       
-    </body>
+ </body>
     
  </html>

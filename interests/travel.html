@@ -15,15 +15,15 @@
 <!--adding pagepilling-->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
    
    <!--j-query-->
-   <script type="text/javascript">
+   <script>
        $(document).ready(function() {
 	$('#pagepiling').pagepiling();
 });
   </script>
- <style  type="text/css">
+ <style>
      
      #next{
      background-color: #008CBA; 
@@ -67,6 +67,8 @@
                </ul>
             </div> 
     </head>
+        
+        
     <body>
         <!--div for the the j-query to work-->
         <div id="pagepiling">
@@ -77,7 +79,7 @@
     <br>  Bahrain (Middle East) 
     </div>
     <!--div for my most travelled to place-->
-	<div class="section" id="section2" style="font-size:150%;"> <strong>Most Travelled to:</strong></br> Spain <br> London </div>
+	<div class="section" id="section2" style="font-size:150%;"> <strong>Most Travelled to:</strong><br> Spain <br> London </div>
 	<!--dic for where I want to visit-->
 	<div class="section" id="section3" style="font-size:150%;"><strong> Place I Want to visit:</strong><br>    Australia <br> Iceland <br> Paris</div>
 	
@@ -92,12 +94,11 @@
 	    
 	    <!--buttons-->
 	    <p>
-	    <button>
-        <a href="sports.html" class= "btn btn-dark" id="back">Previous</a>
-        </button>
-        <button>
-        <a href="cloud.html" class="btn btn-sucess" id="next">Next</a>
-        </button>
+	    
+        <a type="button" href="sports.html" class= "btn btn-dark" id="back">Previous</a>
+        
+        <a type="button" href="cloud.html" class="btn btn-sucess" id="next">Next</a>
+        
         </p>
 	</div>
 	

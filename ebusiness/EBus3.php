@@ -7,7 +7,7 @@ session_start();
     <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
         <head>
-            <style type="text/css">
+            <style >
                 
                  body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -74,15 +74,15 @@ button {
               
                 <?php
                 //Echo session varisbles that were set on the previous page 
-                    echo " First Name " . $_SESSION["user_name"] . "</br>";
-                    echo "Last Name " . $_SESSION["lastname"] . "<br/>";
-                    echo "Address " . $_SESSION["address"] . "<br/>";
-                    echo "        " . $_SESSION["street"] . "<br/>";
-                    echo "         " . $_SESSION["town"] . "<br/>";
-                    echo "        " . $_SESSION["counties"] . "</br>";
-                    echo "Mobile Number" . $_SESSION["mobile"] . "<br/>";
-                    echo "E-mail " . $_SESSION["user_email"] . "</br>";
-                    echo " The Total is " . $_SESSION["total"] . "</br>";
+                    echo " First Name " . $_SESSION["user_name"] . "<br>";
+                    echo "Last Name " . $_SESSION["lastname"] . "<br>";
+                    echo "Address " . $_SESSION["address"] . "<br>";
+                    echo "        " . $_SESSION["street"] . "<br>";
+                    echo "         " . $_SESSION["town"] . "<br>";
+                    echo "        " . $_SESSION["counties"] . "<br>";
+                    echo "Mobile Number" . $_SESSION["mobile"] . "<br>";
+                    echo "E-mail " . $_SESSION["user_email"] . "<br>";
+                    echo " The Total is " . $_SESSION["total"] . "<br>";
  
                 ?>
         </body>

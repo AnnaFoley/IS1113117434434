@@ -135,20 +135,20 @@ button {
             <div class="billing" id="billing">
                 <h3> Billing Address</h3>
                    <!-- First  name needed-->
-                <label for FirstName>
+                <label for 'FirstName'>
                    First Name
                      </label>
                 <input tpye="text" name="user_name" id="user_name" placeholder="First Name" maxlength="30">
                 <br>
                 <!--last name needed-->
-                <label for LastName>
+                <label for 'LastName'>
                     Last Name
                 </label>
                 <input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="15">
                 
                 <br>
                  <!--1st line of address-->
-                 <label for address>
+                 <label for 'address'>
                    Address
                  </label>
               
@@ -156,33 +156,33 @@ button {
                     
                     <br>
                     <!--2nd line of address-->
-                    <label for street>
+                    <label for 'street'>
                         Street
                     </label>
                     <input type="text" name="street" id="street" placeholder="Street" maxlength="30">
                     
                     <br>
                     <!--town/city/village of address-->
-                    <label for town>
+                    <label for 'town'>
                         Town/City
                     </label>
                     <input type="text" name="town" id="town" placeholder="Town/City">
                     <br>
                     <!--the county of address--> 
-                    <label for counties>
+                    <label for 'counties'>
                     Counties
                     </label>
                     <input type="text" name="counties" id="counties" placeholder="Counties" maxlength="20">
                     
                     <br>
                     <!--tetxtbox fot the email address-->
-                    <label for email>
+                    <label for 'email'>
                     E-mail Address
                      </label>
                 <input type="text" name="user_email" id="user_email" placeholder="E-mail" maxlength="30">
                <br>
                <!--textbox for mobile number-->
-               <label for number>
+               <label for 'number'>
                    Mobile Number
                </label>
                <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10">
@@ -194,13 +194,13 @@ button {
               
                 <h4>Visa/Debit Card</h4>
             <!--textbox for the card holders name-->
-               <label for "cardname">
+               <label for 'cardname'>
                Card Holder's Name
                </label>
                <input type="text" name="cardname" id="cardname" maxlength="30">
                <br>
                <!--textbox for the card number, can't be more than 16 numbers-->
-               <label for "cardnumber">
+               <label for 'cardnumber'>
                    Card Number
                </label>
                <input type="text" class="cardnumber" id="cardnumber"placeholder="Card Number" maxlength="16">
@@ -208,23 +208,23 @@ button {
                <br>
                
                <!--textbox for the expiry date of the card-->
-               <label for "expiry-date">
+               <label for 'expiry-date'>
                    Expiry Date
                </label>
-               <input type="date" name="expiry-date" id="expiry-date" placeholder="Expiry Date">
+               <input type="date" name="expiry-date" id="expiry-date">
                
                
               <br>
               <!--textbox for the ccv number on the back of the card, can't be more than 3 numbers--> 
-              <label for "ccv">
+              <label for 'ccv'>
                   CCV Number
                   </label>
-                  <input type="text" name="ccv" id="ccv"  placeholder="CCV Number"maxlength="3">
+                  <input type="text" name="ccv" id="ccv"  placeholder="CCV Number" maxlength="3">
                
                <br>
              
                
-               <label for "pin"
+               <label for 'pin'
                 <label for="user_pin">
                      PIN 
                 </label>

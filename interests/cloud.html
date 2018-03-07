@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    
     <head>
         <title>Cloud Services</title>
      
          <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
-       
+       <meta charset="UTF-8"> <!--source https://stackoverflow.com/questions/17935819/why-is-this-html5-document-invalid as it was coming ip as an error in the validator and I didnt understand why -->
         
  
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
                </ul>
             </div> 
             
-<style type="text/css">
+<style>
 #cloud{ background-color: white;
                     margin:auto;
                       text-align:center;
@@ -37,26 +37,18 @@
                     margin:auto;
                       text-align:center;
 	                width:50%;
-	                height:20%;
+	                height:25%;
 	                border:solid thin black;
                    font-size:100%;
-                      position: absolute;
-                   top:345px;
-                   right:550px;
-                   left: 360px;
                 
 }
 #services-available{background-color: white;
                     margin:auto;
                       text-align:center;
 	                width:50%;
-	                height:60%;
+	                height:1000%;
 	                border:solid thin black;
                    font-size:100%;
-                   position: absolute;
-                   top:540px;
-                   right:550px;
-                   left: 360px;
     
 }
 
@@ -67,14 +59,9 @@
                     margin:auto;
                       text-align:center;
 	                width:50%;
-	                height:40%;
+	                height:80%;
 	                border:solid thin black;
                    font-size:100%;
-                      position: absolute;
-                   top:1050px;
-                   right:550px;
-                   left: 360px;
-    
     
         
     }
@@ -82,13 +69,9 @@
                     margin:auto;
                       text-align:center;
 	                width:20%;
-	                height:35%;
+	                height:50%;
 	                border:solid thin black;
                    font-size:100%;
-                         position: absolute;
-                   top:1400px;
-                   right:550px;
-                   left: 440px;
                     
     }
     
@@ -102,7 +85,7 @@
    width: 150px;
     font-size: 16px;
      position:absolute;
-    top:1700px;
+    top:1550px;
     left:700px;
     right:400px;
 }
@@ -115,7 +98,7 @@
      width: 150px;
     font-size: 16px;
        position:absolute;
-    top:1700px;
+    top:1550px;
     left:450px;
     right:300px;
     
@@ -134,9 +117,8 @@
         <h1 class="mainheading" style="text-decoration: underline">Cloud Computing </h1>
         
         <!--What is Cloud Compptuing-->
-         <div class="cloud" id="cloud">
         <h4 class="Description" style="text-decoration: underline"> What is Cloud Computing </h4>
-       
+        <div class="cloud" id="cloud">
         <p  >Cloud Computing is an Information Technology that enables users to access pools of information, and services through the internet.
         Cloud computing provides a simple way to access servers, storage, databases and a broad set of application services over the Internet. 
         It is used by both   bussinesses and  people  as their everyday storage service. Cloud services are becoming increasingly popular as they are a easy, secure 
@@ -146,9 +128,8 @@
         </div> 
         
         <!--How they work-->
-           <div class="how-works" id="how-works">
           <h4 class="Description" style="text-decoration: underline">How a Cloud Works </h4>
-       
+          <div class="how-works" id="how-works">
           <p>Cloud computing provides a simple way to access servers, storage, databases and a broad set of application services over the Internet.
           A Cloud services platfo1wzrm such as Amazon Web Services, IBM Bluemix and Microsoft Azure owns and maintains the network-connected hardware required for these application services.
           Many  of theses cloud computing service providers use  a friendly, browser-based dashboard that makes it easier for IT professionals and developers to order resources and manage their accounts.
@@ -156,29 +137,29 @@
           </div>
           
           <!--Cloud services available-->
-           <div class="services-available" id="services-available">
           <h4 class="Description" style="text-decoration: underline">Types of cloud services available </h4>
-         
-          <p>Based on a cloud location, we can classify cloud as:public,private,hybrid and a community cloud. These clouds all work in diiferet ways and are useful in different ciricumstances.
+          <div class="services-available" id="services-available">
+          <p>
+              Based on a cloud location, we can classify cloud as:public,private,hybrid and a community cloud. These clouds all work in diiferet ways and are useful in different ciricumstances.
            <ul><li><strong>Public cloud</strong> This mean's  that the whole computing infrastructure is located on the premises of a cloud computing company. 
            The location remains, thus, separate from the customer and has no physical control over the infrastructure.
             As public clouds use shared resources, they do excel mostly in performance, but are also most vulnerable to various attacks.</li>
             <li><strong>Private cloud </strong> This means using a cloud infrastructure (network) solely by one customer/organization. It is not shared with others
             The companies have an option of choosing an on-premise private cloud as well, which is more expensive, but they do have a physical control over the infrastructure.
             The security and control level is highest while using a private network.</li>
-            <li></li><strong>Hybrid cloud</strong> This means using both private and public clouds, depending on their purpose.
+            <li><strong>Hybrid cloud</strong> This means using both private and public clouds, depending on their purpose.
             For example, public cloud can be used to interact with customers, while keeping their data secured through a private cloud</li>
            <li> <strong>Community cloud </strong>implies an infrastructure that is shared between organizations, usually with the shared data and data management concerns.
             For example, a community cloud can belong to a government of a single country.
-            Community clouds can be located both on and off the premises.</li></ul></p>
+            Community clouds can be located both on and off the premises.</li></ul>
+            </p>
         </div>
         <br>
     
   
         <!--Uses of clouds-->
-                <div class="uses-cloud" id="uses-cloud">
         <h4 class="Description" style="text-decoration: underline">Uses of Clouds </h4>
-
+        <div class="uses-cloud" id="uses-cloud">
         <p><ul><li><strong>File storage</strong>Cloud can offer you the possibility of storing your files and accessing, storing and retrieving them from any web-enabled interface. 
         At any time and place you have high availability, speed, scalability and security for your environment.</li> 
         <li> <strong>Big data analytics</strong>One of the aspects offered by leveraging cloud computing is the ability to tap into vast quantities of both structured and unstructured data to harness the benefit of extracting business value
@@ -187,9 +168,8 @@
         </div>
         
         <!--Benefits of Clouds-->
-            <div class="benefits" id="benefits">
         <h4 class="Description" style="text-decoration: underline">Benefits of using clouds</h4>
-    
+        <div class="benefits" id="benefits">
         <p ><ul><li>Reduced IT costs</li>
         <li>Business continuity</li>
         <li>Collaboration efficiency</li>
@@ -199,12 +179,12 @@
         
         <!--buttons-->
        
-<form method="get" action="travel.html">
-      <button type="sumbit" id="back">Previous</button>
-     
+        <form method="get" action="travel.html">
+      <button  id="back">Previous</button>
        </form>
-       <from method="get" action="homepage.html">
-    <button type="sumbit" id="home">Home</button>
+       <from id="home">Home</button>
        </from>
-    </body>    
+       
+       
+ </body>    
     </html>

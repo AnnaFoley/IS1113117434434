@@ -6,7 +6,7 @@ session_start();
 <html>
     <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
-        <head>
+<head>
             <style >
                 
                  body {
@@ -67,7 +67,8 @@ button {
                    $_SESSION["counties"] = $_POST["counties"];
                    $_SESSION["mobile"] = $_POST["mobile"];
                    ?>
-        </head>
+                   
+</head>
         <body>
                 <h1> Thank You for your purchase </h1>
                 <h2>Payment Receipt</h2>

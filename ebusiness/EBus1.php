@@ -4,9 +4,9 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-    <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
+    <link rel="Stylesheet" href="Cloud_pages.css" >
         
-    <head>
+<head>
        <title>Select Product</title>
        
           <!--tab on the top of the page so can go back home  or on to the next page-->
@@ -24,9 +24,9 @@ session_start();
         
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
+        <script src="cost_calc.js"></script>
         
-        <style type="text/css">
+        <style>
         
          body {
            background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -102,7 +102,7 @@ session_start();
         
 </head>
   
- <body>
+<body>
         
     <h1 class="mianheading">Select a Product </h1>
             
@@ -167,11 +167,11 @@ session_start();
         Total
         <input type="text" id="total" name="total" value="0.00"  readonly/>
        
-        </br>
+        <br>
         (- discount + VAT)
         </label>
             
-        </br>
+        <br>
         <!--button for continueing on to the nect page, disabled until the cost is calculated-->
         <div class="shopping-cart" id="shopping-cart">
         <button   type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
@@ -190,6 +190,6 @@ session_start();
         <a role="button" href="Ebus1.php" class="btn btn-success"> Clear Choice</a>
       
       
- </body>
+</body>
     
  </html>

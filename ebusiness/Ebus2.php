@@ -16,8 +16,9 @@ session_start();
             <li> <a href="..//homepage.html">Home</a></li>
              <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
               <li> <a href="..//interests/sports.html">Interests(Sports)</a></li>
-            <li> <a href="AboutCloud.html"> About Clouds</a></li>
-            <li> <a href="EBus1.php">Select a product</a></li>
+              <li><a href="..//ebusiness.cloud_vendor.html">In the Sky</a></li>
+            <li> <a href="..//ebusiness/AboutCloud.html"> About Clouds</a></li>
+            <li> <a href="..//ebusiness/EBus1.php">Select a product</a></li>
        </ul>
        </div>
        

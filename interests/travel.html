@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="utf-8"/>
         <title>Travel</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
@@ -8,20 +8,20 @@
          
        
 
-<!--adding j-query-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!--adding j-query-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-<!--adding pagepilling-->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+        <!--adding pagepilling-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
    
    <!--j-query-->
    <script>
        $(document).ready(function() {
 	$('#pagepiling').pagepiling();
-});
+        });
   </script>
  <style>
      
@@ -38,9 +38,9 @@
     top:500px;
     left:700px;
     right:400px;
-}
+    }
 
-#back{background-color:#e7e7e7; 
+    #back{background-color:#e7e7e7; 
     border: none;
     color: black;
     padding:14px 40px;
@@ -53,8 +53,8 @@
     left:450px;
     right:300px;
     
-}
- </style>
+    }
+     </style>
      <!--tab on the top of the page so can go back home  or on to the next page-->
             <div class="nav-bar" id="nav-bar"> 
                 <ul>
@@ -66,10 +66,10 @@
                     <li> <a href="..//ebusiness/EBus1.php">Select a product</a></li>
                </ul>
             </div> 
-    </head>
+</head>
         
         
-    <body>
+<body>
         <!--div for the the j-query to work-->
         <div id="pagepiling">
             <!--cover page for the travel section-->
@@ -91,11 +91,10 @@
 	    
 	    <br>
 	    <br>
-	    
-	    <!--buttons-->
-	      <from method="get" action="sports.html">
-	 <button  id="back">Previous</button>
-	    </from>
+	     <!--buttons-->
+	      <form method="get" action="sports.html">
+         <button  id="back">Previous</button>
+       </form>
         
         <form  method="get" action="cloud.html">
         <button id="next">Next</button>
@@ -103,7 +102,7 @@
      
 	</div>
 	
-</div>
-
-        </body>
-       </html>
+    </div>   
+	
+ </body>
+ </html>

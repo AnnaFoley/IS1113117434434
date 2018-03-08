@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    
-    <head>
+<head>
         <title>Cloud Services</title>
      
          <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
@@ -40,15 +40,23 @@
 	                height:25%;
 	                border:solid thin black;
                    font-size:100%;
+                    position: absolute;
+                   top:400px;
+                   right:500px;
+                   left:340px;
                 
 }
 #services-available{background-color: white;
                     margin:auto;
                       text-align:center;
 	                width:50%;
-	                height:1000%;
+	                height:80%;
 	                border:solid thin black;
                    font-size:100%;
+                   position: absolute;
+                   top:600px;
+                   right:500px;
+                   left:340px;
     
 }
 
@@ -59,9 +67,13 @@
                     margin:auto;
                       text-align:center;
 	                width:50%;
-	                height:80%;
+	                height:50%;
 	                border:solid thin black;
                    font-size:100%;
+                    position: absolute;
+                   top:1150px;
+                   right:500px;
+                   left:340px;
     
         
     }
@@ -71,7 +83,10 @@
 	                width:20%;
 	                height:50%;
 	                border:solid thin black;
-                   font-size:100%;
+                   font-size:100%;  position: absolute;
+                   top:1500px;
+                   right:500px;
+                   left:340px;
                     
     }
     
@@ -85,7 +100,7 @@
    width: 150px;
     font-size: 16px;
      position:absolute;
-    top:1550px;
+    top:1800px;
     left:700px;
     right:400px;
 }
@@ -98,7 +113,7 @@
      width: 150px;
     font-size: 16px;
        position:absolute;
-    top:1550px;
+    top:1800px;
     left:450px;
     right:300px;
     
@@ -108,17 +123,18 @@
 
 
 
-    </head>
+</head>
     
-    <body>
+<body>
             
              
         
         <h1 class="mainheading" style="text-decoration: underline">Cloud Computing </h1>
         
         <!--What is Cloud Compptuing-->
-        <h4 class="Description" style="text-decoration: underline"> What is Cloud Computing </h4>
+  
         <div class="cloud" id="cloud">
+                  <h4 class="Description" style="text-decoration: underline"> What is Cloud Computing </h4>
         <p  >Cloud Computing is an Information Technology that enables users to access pools of information, and services through the internet.
         Cloud computing provides a simple way to access servers, storage, databases and a broad set of application services over the Internet. 
         It is used by both   bussinesses and  people  as their everyday storage service. Cloud services are becoming increasingly popular as they are a easy, secure 
@@ -128,17 +144,19 @@
         </div> 
         
         <!--How they work-->
+       
+          <div class="how-works" id="how-works"> 
           <h4 class="Description" style="text-decoration: underline">How a Cloud Works </h4>
-          <div class="how-works" id="how-works">
           <p>Cloud computing provides a simple way to access servers, storage, databases and a broad set of application services over the Internet.
           A Cloud services platfo1wzrm such as Amazon Web Services, IBM Bluemix and Microsoft Azure owns and maintains the network-connected hardware required for these application services.
           Many  of theses cloud computing service providers use  a friendly, browser-based dashboard that makes it easier for IT professionals and developers to order resources and manage their accounts.
           </p>
           </div>
           
-          <!--Cloud services available-->
-          <h4 class="Description" style="text-decoration: underline">Types of cloud services available </h4>
+        
           <div class="services-available" id="services-available">
+                <!--Cloud services available-->
+          <h4 class="Description" style="text-decoration: underline">Types of cloud services available </h4>
           <p>
               Based on a cloud location, we can classify cloud as:public,private,hybrid and a community cloud. These clouds all work in diiferet ways and are useful in different ciricumstances.
            <ul><li><strong>Public cloud</strong> This mean's  that the whole computing infrastructure is located on the premises of a cloud computing company. 
@@ -158,8 +176,9 @@
     
   
         <!--Uses of clouds-->
-        <h4 class="Description" style="text-decoration: underline">Uses of Clouds </h4>
         <div class="uses-cloud" id="uses-cloud">
+            
+        <h4 class="Description" style="text-decoration: underline">Uses of Clouds </h4>
         <p><ul><li><strong>File storage</strong>Cloud can offer you the possibility of storing your files and accessing, storing and retrieving them from any web-enabled interface. 
         At any time and place you have high availability, speed, scalability and security for your environment.</li> 
         <li> <strong>Big data analytics</strong>One of the aspects offered by leveraging cloud computing is the ability to tap into vast quantities of both structured and unstructured data to harness the benefit of extracting business value
@@ -168,8 +187,9 @@
         </div>
         
         <!--Benefits of Clouds-->
-        <h4 class="Description" style="text-decoration: underline">Benefits of using clouds</h4>
+       
         <div class="benefits" id="benefits">
+             <h4 class="Description" style="text-decoration: underline">Benefits of using clouds</h4>
         <p ><ul><li>Reduced IT costs</li>
         <li>Business continuity</li>
         <li>Collaboration efficiency</li>
@@ -183,9 +203,11 @@
       <button  id="back">Previous</button>
        </form>
        
-       <from  method="get" action="homepage.html">
-           <button id="home">Home</button>
-       </from>
+   
+     <form method="get" action="..//homepage.html">
+      <button  id="home">Home</button>
+       </form>
+    
        
        
  </body>    

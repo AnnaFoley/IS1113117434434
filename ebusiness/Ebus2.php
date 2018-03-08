@@ -5,13 +5,13 @@ session_start();
 <!DOCTYPE html>
 <html>
     
-    <head>
+ <head>
         <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
      
- <title> Enter Details</title>
+             <title> Enter Details</title>
 
- <!--tab on the top of the page so can go back home  or on to the next page-->
- <div class="nav-bar" id="nav-bar">
+         <!--tab on the top of the page so can go back home  or on to the next page-->
+         <div class="nav-bar" id="nav-bar">
                 <ul>
             <li> <a href="..//homepage.html">Home</a></li>
              <li> <a href="..//Cv/cv_page1.html">Cv</a></li>
@@ -33,15 +33,15 @@ session_start();
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
     text-align:center;
     font-size:120%;
-}
-background-image{
+        }
+    background-image{
     background-size:cover;
-margin-left:auto;
-margin-right:auto;
-background-attachment:fixed;
-}    
+    margin-left:auto;
+    margin-right:auto;
+    background-attachment:fixed;
+    }    
 
-button {
+    button {
     background-color: #e7e7e7; /* Grey */
     border: none;
     color: black;
@@ -50,29 +50,29 @@ button {
     display: inline-block;
     font-size: 12px;
     width: 250px;
-}
+    }
 
-#nav-bar{list-style: none;
+    #nav-bar{list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: LightGrey;
     color:black;
-}
+    }
     
 
- li {  
+     li {  
      float:left;
      display: block;
     color: black;
     text-align: left;
     padding: 14px 16px;
      text-decoration: none;
-}
+    }
 
-.mainheading{
+    .mainheading{
     text-align:center;
-}
+    }
             
             #purchase{
                 padding: 12px 28px;
@@ -124,9 +124,9 @@ button {
             
         </style>
         
-    </head>
+</head>
     
-    <body>
+<body>
         
         <h1>Checkout</h1>
     <!--form to move on to the next page-->
@@ -138,7 +138,7 @@ button {
                 <label for'FirstName'>
                    First Name
                      </label>
-                <input tpye="text" name="user_name" id="user_name" placeholder="First Name" maxlength="30">
+                <input type="text" name="user_name" id="user_name" placeholder="First Name" maxlength="30">
                 <br>
                 <!--last name needed-->
                 <label for'LastName'>
@@ -211,7 +211,11 @@ button {
                <label for'expiry-date'>
                    Expiry Date
                </label>
-               <input type="date" name="expiry-date" id="expiry-date">
+               <input type="text"name="expiry-date" id="expiry-date">
+               
+               
+               
+               
                
                
               <br>
@@ -256,5 +260,5 @@ button {
         $_SESSION["total"]=$_POST["total"];
         ?>
   
-    </body>
-    </html>
+</body>
+</html>

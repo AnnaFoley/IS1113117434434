@@ -27,10 +27,7 @@ session_start();
         <script src="cost_calc.js"></script>
         
       
-        
-        
-</head>
-    <style>
+        <style>
         
          body {
            background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -102,6 +99,9 @@ session_start();
          }
          
         </style>
+        
+</head>
+    
 <body>
         
     <h1 class="mianheading">Select a Product </h1>

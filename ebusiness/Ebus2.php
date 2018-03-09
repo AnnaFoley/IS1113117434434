@@ -27,10 +27,7 @@ session_start();
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
            <script  src="ebus_validator.js"></script>
-     
-        
-</head>
-       <style >
+      <style >
             
              body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -126,6 +123,9 @@ session_start();
                 
             
         </style>
+        
+</head>
+      
 <body>
         
         <h1>Checkout</h1>

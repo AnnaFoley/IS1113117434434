@@ -20,9 +20,7 @@ session_start();
                    $_SESSION["counties"] = $_POST["counties"];
                    $_SESSION["mobile"] = $_POST["mobile"];
                    ?>
-                   
-</head>
-  <style >
+           style >
                 
                  body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -69,7 +67,9 @@ button {
     text-align:center;
 }
     
-            </style>
+            </style>        
+</head>
+  <
         <body>
                 <h1> Thank You for your purchase </h1>
                 <h2>Payment Receipt</h2>

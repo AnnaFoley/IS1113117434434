@@ -27,7 +27,10 @@ session_start();
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
            <script  src="ebus_validator.js"></script>
-        <style >
+     
+        
+</head>
+       <style >
             
              body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -123,14 +126,12 @@ session_start();
                 
             
         </style>
-        
-</head>
-    
 <body>
         
         <h1>Checkout</h1>
     <!--form to move on to the next page-->
       <form method="POST" action="EBus3.php">
+          
                     <!--div for the billing address-->
             <div class="billing" id="billing">
                 <h3> Billing Address</h3>
@@ -203,7 +204,7 @@ session_start();
                <label for'cardnumber'>
                    Card Number
                </label>
-               <input type="text" class="cardnumber" id="cardnumber"placeholder="Card Number" maxlength="16">
+               <input type="text" name="cardnumber" id="cardnumber" placeholder="Card Number" maxlength="16">
                
                <br>
                
@@ -211,13 +212,8 @@ session_start();
                <label for'expiry-date'>
                    Expiry Date
                </label>
-               <input type="text"name="expiry-date" id="expiry-date">
-               
-               
-               
-               
-               
-               
+               <input type="text" name="expiry-date" id="expiry-date">
+           
               <br>
               <!--textbox for the ccv number on the back of the card, can't be more than 3 numbers--> 
               <label for'ccv'>
@@ -227,8 +223,7 @@ session_start();
                
                <br>
              
-               
-               <label for'pin'
+              
                 <label for="user_pin">
                      PIN 
                 </label>

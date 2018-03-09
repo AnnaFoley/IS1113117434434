@@ -7,7 +7,22 @@ session_start();
     <link rel="Stylesheet" href="Cloud_pages.css" type="text/css"/>
         
 <head>
-            <style >
+          
+            <title>RECIEPT</title>
+            <?php
+            //Set yhe session variables 
+                   $_SESSION["user_email"] = $_POST["user_email"];
+                   $_SESSION["user_name"] = $_POST["user_name"];
+                   $_SESSION["lastname"] = $_POST["lastname"];
+                   $_SESSION["address"] = $_POST["address"];
+                   $_SESSION["street"] = $_POST["street"];
+                   $_SESSION["town"] = $_POST["town"];
+                   $_SESSION["counties"] = $_POST["counties"];
+                   $_SESSION["mobile"] = $_POST["mobile"];
+                   ?>
+                   
+</head>
+  <style >
                 
                  body {
     background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -55,20 +70,6 @@ button {
 }
     
             </style>
-            <title>RECIEPT</title>
-            <?php
-            //Set yhe session variables 
-                   $_SESSION["user_email"] = $_POST["user_email"];
-                   $_SESSION["user_name"] = $_POST["user_name"];
-                   $_SESSION["lastname"] = $_POST["lastname"];
-                   $_SESSION["address"] = $_POST["address"];
-                   $_SESSION["street"] = $_POST["street"];
-                   $_SESSION["town"] = $_POST["town"];
-                   $_SESSION["counties"] = $_POST["counties"];
-                   $_SESSION["mobile"] = $_POST["mobile"];
-                   ?>
-                   
-</head>
         <body>
                 <h1> Thank You for your purchase </h1>
                 <h2>Payment Receipt</h2>

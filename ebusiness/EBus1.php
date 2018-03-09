@@ -4,11 +4,11 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-    <link rel="Stylesheet" href="Cloud_pages.css" >
+ 
         
 <head>
        <title>Select Product</title>
-       
+          <link rel="Stylesheet" href="Cloud_pages.css" >
           <!--tab on the top of the page so can go back home  or on to the next page-->
           <div class="nav-bar" id="nav-bar">
                 <ul>
@@ -26,7 +26,11 @@ session_start();
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="cost_calc.js"></script>
         
-        <style>
+      
+        
+        
+</head>
+    <style>
         
          body {
            background-image:url("https://i.ytimg.com/vi/pKsfmx6pZgA/maxresdefault.jpg");
@@ -98,10 +102,6 @@ session_start();
          }
          
         </style>
-        
-        
-</head>
-  
 <body>
         
     <h1 class="mianheading">Select a Product </h1>
